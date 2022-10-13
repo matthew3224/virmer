@@ -13,16 +13,17 @@
 </head>
 
 <body>
-<!-- Swiper -->
+
 
 <section class="structure">
   <div class="container structure__wrapper">
     <h2 class="structure__title">The frame structure makes the machines <span>Wattsan</span> unique</h2>
     <div class="structure__content structure-content">
-      <div class="swiper mySwiper2  gallery">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="structure-content__text">
+      <div class="swiper structure__gallery js-structure-gallery">
+        <ul class="swiper-wrapper structure-gallery__list">
+
+          <li class="swiper-slide structure-gallery__item">
+            <div class="structure-content__wrapper">
               <h3 class="structure-content__title">Three Phase Stepper Motors 1</h3>
               <p class="structure-content__paragraph">
                 – специально были изменены шаговые двигатели вместо двухфазных на трехфазные.
@@ -33,9 +34,10 @@
                 фанеры. Как правило данные двигатели служат у клиентов от трех лет и более,
                 благодаря своей исключительной надежности</p>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="structure-content__text">
+          </li>
+
+          <li class="swiper-slide structure-gallery__item">
+            <div class="structure-content__wrapper">
               <h3 class="structure-content__title">Three Phase Stepper Motors 2</h3>
               <p class="structure-content__paragraph">
                 – специально были изменены шаговые двигатели вместо двухфазных на трехфазные.
@@ -46,9 +48,10 @@
                 фанеры. Как правило данные двигатели служат у клиентов от трех лет и более,
                 благодаря своей исключительной надежности</p>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="structure-content__text">
+          </li>
+
+          <li class="swiper-slide structure-gallery__item">
+            <div class="structure-content__wrapper">
               <h3 class="structure-content__title">Three Phase Stepper Motors 3</h3>
               <p class="structure-content__paragraph">
                 – специально были изменены шаговые двигатели вместо двухфазных на трехфазные.
@@ -59,9 +62,10 @@
                 фанеры. Как правило данные двигатели служат у клиентов от трех лет и более,
                 благодаря своей исключительной надежности</p>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="structure-content__text">
+          </li>
+
+          <li class="swiper-slide structure-gallery__item">
+            <div class="structure-content__wrapper">
               <h3 class="structure-content__title">Three Phase Stepper Motors 4</h3>
               <p class="structure-content__paragraph">
                 – специально были изменены шаговые двигатели вместо двухфазных на трехфазные.
@@ -72,40 +76,51 @@
                 фанеры. Как правило данные двигатели служат у клиентов от трех лет и более,
                 благодаря своей исключительной надежности</p>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
 
-      <div class="swiper mySwiper structure-thumbs">
-        <div class="swiper-wrapper">
+      <div class="swiper structure__thumbs js-structure-thumbs">
+        <ul class="swiper-wrapper structure-thumbs__list">
 
-          <div class="swiper-slide structure-thumbs__slide scheme-item">
+          <li class="swiper-slide  structure-thumbs__slide  structure-thumbs__item">
             <div class="scheme-item__circle"></div>
             <span class="scheme-item__text">Three Phase Stepper Motors 1</span>
-            <img class="scheme-item__img" width="149" height="149" src="cnc-img.png" alt="alt" loading="lazy">
-          </div>
+            <picture>
+              <source type="image/webp" srcset="">
+              <img class="scheme-item__img" width="149" height="149" src="cnc-img.png" itemprop="image" alt="alt" loading="lazy">
+            </picture>
+          </li>
 
-          <div class="swiper-slide structure-thumbs__slide scheme-item">
+          <li class="swiper-slide  structure-thumbs__slide  structure-thumbs__item">
             <div class="scheme-item__circle"></div>
             <span class="scheme-item__text">Three Phase Stepper Motors 1</span>
-            <img class="scheme-item__img" width="149" height="149" src="cnc-img.png" alt="alt" loading="lazy">
-          </div>
+            <picture>
+              <source type="image/webp" srcset="">
+              <img class="scheme-item__img" width="149" height="149" src="cnc-img.png" itemprop="image" alt="alt" loading="lazy">
+            </picture>
+          </li>
 
-          <div class="swiper-slide structure-thumbs__slide scheme-item">
+          <li class="swiper-slide  structure-thumbs__slide  structure-thumbs__item">
             <div class="scheme-item__circle"></div>
             <span class="scheme-item__text">Three Phase Stepper Motors 1</span>
-            <img class="scheme-item__img" width="149" height="149" src="cnc-img.png" alt="alt" loading="lazy">
-          </div>
+            <picture>
+              <source type="image/webp" srcset="">
+              <img class="scheme-item__img" width="149" height="149" src="cnc-img.png" itemprop="image" alt="alt" loading="lazy">
+            </picture>
+          </li>
 
-          <div class="swiper-slide structure-thumbs__slide scheme-item">
+          <li class="swiper-slide  structure-thumbs__slide  structure-thumbs__item">
             <div class="scheme-item__circle"></div>
             <span class="scheme-item__text">Three Phase Stepper Motors 1</span>
-            <img class="scheme-item__img" width="149" height="149" src="cnc-img.png" alt="alt" loading="lazy">
-          </div>
+            <picture>
+              <source type="image/webp" srcset="">
+              <img class="scheme-item__img" width="149" height="149" src="cnc-img.png" itemprop="image" alt="alt" loading="lazy">
+            </picture>
+          </li>
 
-        </div>
+        </ul>
       </div>
-
     </div>
   </div>
 </section>
@@ -116,14 +131,14 @@
 <!-- Initialize Swiper -->
 <script>
 
-  var swiper = new Swiper(".mySwiper", {
+  var swiper = new Swiper(".js-structure-thumbs", {
     spaceBetween: 10,
     slidesPerView: 3,
     allowTouchMove: false,
     freeMode: true,
     watchSlidesProgress: true,
   });
-  var swiper2 = new Swiper(".mySwiper2", {
+  var swiper2 = new Swiper(".js-structure-gallery", {
     spaceBetween: 10,
     effect: 'fade',
     fadeEffect: {
