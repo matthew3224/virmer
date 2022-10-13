@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  line-height: 1.4;
+  font-size: 16px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.structure {
+  padding: 75px 0;
+  color: #FFFFFF;
+  background-color: #28292F;
+
+  &__title {
+    max-width: 910px;
+    font-size: 48px;
+    line-height: 1.35;
+
+    span {
+      color: #F7CE03;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 30px;
+    min-height: 490px;
+    padding-top: 100px;
+
+    .swiper {
+      grid-column: 6 span;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__thumbs {
+    background-image: url("/img/cnc-background1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: unset !important;
+
+    .swiper-wrapper {
+      background-image: url("structure-img.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .swiper-slide {
+    font-size: 18px;
+    display: flex;
+    color: #fff;
+  }
+
+  &-content__title {
+    font-size: 24px;
+  }
+
+  &-content__paragraph {
+    margin-top: 45px;
+    font-size: 18px;
+    line-height: 1.57;
+  }
+
+  &-thumbs__slide {
+    width: unset !important;
+    margin-right: unset !important;
+    border-radius: 15px;
+    height: unset;
+
+    &:first-of-type {
+      top: 3%;
+      left: 73%;
+    }
+
+    &:first-of-type .scheme-item__img {
+      top: -310%;
+      right: 135%;
+    }
+
+    &:nth-of-type(2) {
+      top: 19%;
+      right: -31%;
+    }
+
+    &:nth-of-type(2) .scheme-item__img {
+      top: -5%;
+      right: 120%;
+    }
+
+    &:nth-of-type(3) {
+      top: 40%;
+      right: -25%;
+    }
+
+    &:nth-of-type(3) .scheme-item__img {
+      top: 15%;
+      right: 130%;
+    }
+
+    &:nth-of-type(4) {
+      top: 29.5%;
+      left: 38%;
+    }
+
+    &:nth-of-type(4) .scheme-item__img {
+      top: 50%;
+      right: 115%;
+    }
+
+
+
+  }
+
+}
