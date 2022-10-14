@@ -1,3 +1,4 @@
+$img_dir: '/img/';
 * {
   padding: 0;
   margin: 0;
@@ -66,91 +67,185 @@ a {
     grid-gap: 30px;
     min-height: 490px;
     padding-top: 100px;
-
-    .swiper {
-      grid-column: 6 span;
-      width: 100%;
-      height: 100%;
-    }
   }
 
   &__thumbs {
-    background-image: url("/img/cnc-background1.png");
+    grid-column: 6 span;
+    width: 100%;
+    height: 100%;
+    background-image: url($img_dir + "cnc-background1.png");
     background-size: contain;
     background-repeat: no-repeat;
     overflow: unset !important;
 
     .swiper-wrapper {
-      background-image: url("structure-img.png");
+      background-image: url($img_dir + "structure-img.png");
       background-size: contain;
       background-repeat: no-repeat;
     }
   }
 
-  .swiper-slide {
-    font-size: 18px;
-    display: flex;
-    color: #fff;
-  }
+  &-thumbs {
+    &__slide {
+      width: unset !important;
+      margin-right: unset !important;
+      border-radius: 15px;
+      height: unset;
+      font-size: 18px;
+      color: #fff;
+    }
 
-  &-content__title {
-    font-size: 24px;
-  }
+    &__slide,
+    &-item__circle {
+      position: absolute;
+    }
 
-  &-content__paragraph {
-    margin-top: 45px;
-    font-size: 18px;
-    line-height: 1.57;
-  }
+    &-item {
+      &__circle {
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 50px;
+        height: 30px;
+        font-size: 10px;
+        background-color: #F7CE03;
+        border-radius: 15px;
+        cursor: pointer;
+      }
 
-  &-thumbs__slide {
-    width: unset !important;
-    margin-right: unset !important;
-    border-radius: 15px;
-    height: unset;
+      &__circle::after,
+      &__circle::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        background-color: #28292F;
+        transform: translate(-50%, -50%);
+      }
 
-    &:first-of-type {
+      &__circle::before {
+        width: 20px;
+        height: 2px;
+      }
+
+      &__circle::after {
+        width: 2px;
+        height: 20px;
+      }
+
+      &__text {
+        display: block;
+        height: 30px;
+        padding-left: 64px;
+        padding-right: 24px;
+        line-height: 1.7;
+        white-space: nowrap;
+        background-color: #F7CE03BA;
+        border-radius: 15px;
+        opacity: 0;
+      }
+
+      &__img {
+        position: absolute;
+        display: none;
+        object-fit: none;
+      }
+    }
+
+    &__slide:first-of-type {
       top: 3%;
       left: 73%;
     }
 
-    &:first-of-type .scheme-item__img {
+    &__slide:first-of-type &-item__img {
       top: -310%;
       right: 135%;
     }
 
-    &:nth-of-type(2) {
+    &__slide:nth-of-type(2) {
       top: 19%;
       right: -31%;
     }
 
-    &:nth-of-type(2) .scheme-item__img {
+    &__slide:nth-of-type(2) &-item__img {
       top: -5%;
       right: 120%;
     }
 
-    &:nth-of-type(3) {
+    &__slide:nth-of-type(3) {
       top: 40%;
       right: -25%;
     }
 
-    &:nth-of-type(3) .scheme-item__img {
+    &__slide:nth-of-type(3) &-item__img {
       top: 15%;
       right: 130%;
     }
 
-    &:nth-of-type(4) {
+    &__slide:nth-of-type(4) {
       top: 29.5%;
       left: 38%;
     }
 
-    &:nth-of-type(4) .scheme-item__img {
+    &__slide:nth-of-type(4) &-item__img {
       top: 50%;
       right: 115%;
     }
-
-
-
   }
 
+  &__gallery {
+    grid-column: 6 span;
+    width: 100%;
+    height: 100%;
+  }
+
+  &-gallery-item {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__paragraph {
+      margin-top: 45px;
+      font-size: 18px;
+      line-height: 1.57;
+    }
+  }
+
+  .swiper-slide-thumb-active {
+    .structure-thumbs-item {
+      &__img {
+        display: block;
+        animation: scale-animation 0.5s;
+      }
+
+      &__text {
+        opacity: 1;
+
+        animation: xmove-animation 0.5s;
+      }
+    }
+  }
+}
+
+@keyframes xmove-animation {
+  0% {
+    transform: translateX(40px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes scale-animation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
