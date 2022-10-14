@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+// Heading
+@font-face {
+  font-family: 'TT Norms Pro Trial Expanded';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local('TT Norms Pro Trial Expanded Regular'), local('TT-Norms-Pro-Trial-Expanded-Regular'), local('TTNormsProTrialExpandedRegular'),
+  url('/fonts/TTNormsProTrialExpandedRegular.woff2') format('woff2'),
+  url('/fonts/TTNormsProTrialExpandedRegular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'TT Norms Pro Trial Expanded';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: local('TT Norms Pro Trial Expanded Medium'), local('TT-Norms-Pro-Trial-Expanded-Medium'), local('TTNormsProTrialExpandedMedium'),
+  url('/fonts/TTNormsProTrialExpandedMedium.woff2') format('woff2'),
+  url('/fonts/TTNormsProTrialExpandedMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'TT Norms Pro Trial Expanded';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: local('TT Norms Pro Trial Expanded Bold'), local('TT-Norms-Pro-Trial-Expanded-Bold'), local('TTNormsProTrialExpandedBold'),
+  url('/fonts/TTNormsProTrialExpandedBold.woff2') format('woff2'),
+  url('/fonts/TTNormsProTrialExpandedBold.woff') format('woff');
+}
+
+// Text
+@font-face {
+  font-family: 'TT Smalls Trial';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local('TT Smalls Trial Regular'), local('TT-Smalls-Trial-Regular'), local('TTSmallsTrialRegular'),
+  url('/fonts/TTSmallsTrialRegular.woff2') format('woff2'),
+  url('/fonts/TTSmallsTrialRegular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'TT Smalls Trial';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: local('TT Smalls Trial Medium'), local('TT-Smalls-Trial-Medium'), local('TTSmallsTrialMedium'),
+  url('/fonts/TTSmallsTrialMedium.woff2') format('woff2'),
+  url('/fonts/TTSmallsTrialMedium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'TT Smalls Trial';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: local('TT Smalls Trial Demi Bold'), local('TT-Smalls-Trial-Demi-Bold'), local('TTSmallsTrialDemiBold'),
+  url('/fonts/TTSmallsTrialDemiBold.woff2') format('woff2'),
+  url('/fonts/TTSmallsTrialDemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'TT Smalls Trial';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: local('TT Smalls Trial Bold'), local('TT-Smalls-Trial-Bold'), local('TTSmallsTrialBold'),
+  url('/fonts/TTSmallsTrialBold.woff2') format('woff2'),
+  url('/fonts/TTSmallsTrialBold.woff') format('woff');
+}
