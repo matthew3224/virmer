@@ -54,12 +54,15 @@
 
     &__meta {
       display: flex;
+      align-items: center;
       margin-top: auto;
     }
 
+    &__avatar {
+      margin-right: 10px;
+    }
+
     &__author {
-      align-self: center;
-      margin-left: 10px;
       color: #808080;
     }
   }
