@@ -122,8 +122,8 @@
     }
 
     &__slide:first-of-type {
-      top: 3%;
-      left: 73%;
+      top: -5%;
+      left: 66%;
     }
 
     &__slide:first-of-type &-item__img {
@@ -132,13 +132,13 @@
     }
 
     &__slide:nth-of-type(2) {
-      top: 19%;
-      right: -31%;
+      top: 12%;
+      right: -47%;
     }
 
     &__slide:nth-of-type(2) &-item__img {
-      top: -5%;
-      right: 120%;
+      top: -104%;
+      right: 133%;
     }
 
     &__slide:nth-of-type(3) {
@@ -178,6 +178,7 @@
     }
 
     &__paragraph {
+      max-width: 500px;
       margin-top: 45px;
       font-size: 18px;
       line-height: 1.57;

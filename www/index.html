@@ -9,7 +9,24 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <title>Document</title>
 </head>
+<style>
+    .question {
+        margin: 10px 0 0;
+    }
+
+    .question__trigger {
+        width: 100%;
+        text-align: left;
+    }
+
+    .answer {
+        overflow: hidden;
+        height: 0;
+        transition: height 0.5s;
+    }
+</style>
 <body>
+
 <div style="display:none">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <symbol id="icon-purchase-awards" viewBox="0 0 54 56">
@@ -107,17 +124,20 @@
             <path d="M27.8228 7.11279H26.2422V8.69344H27.8228V7.11279Z"/>
             <path d="M16.7564 7.11279H15.1758V8.69344H16.7564V7.11279Z"/>
         </symbol>
+        <symbol id="icon-reviews-youtube" viewBox="0 0 63 64">
+            <path d="M30.4483 0C13.4017 0 1 12.4064 1 29.4483C1 46.4902 13.4017 61 30.4483 61C47.4948 61 62 46.4902 62 29.4483C62 12.4064 47.4948 0 30.4483 0ZM40.9655 29.4483L26.2414 42.069C26.1589 42.1282 26.3427 42.0614 26.2414 42.069C26.1401 42.0766 24.2284 42.1152 24.1379 42.069C24.0475 42.0227 24.191 42.1556 24.1379 42.069C24.0849 41.9824 24.1381 40.0671 24.1379 39.9655V18.931C24.1376 18.8293 24.085 19.0179 24.1379 18.931C24.1909 18.8441 24.0473 18.9774 24.1379 18.931C24.2285 18.8847 26.1399 18.9232 26.2414 18.931C26.3429 18.9389 26.159 18.8712 26.2414 18.931L40.9655 29.4483C40.9255 29.371 41.0366 29.4985 40.9655 29.4483C40.9655 29.3612 41.0055 29.5256 40.9655 29.4483C41.0055 29.371 40.9655 29.5353 40.9655 29.4483C41.0366 29.398 40.9255 29.5256 40.9655 29.4483Z"/>
+        </symbol>
     </svg>
 </div>
 
 <section class="skeleton">
-    <div class="container skeleton__wrapper">
+    <div class="container  skeleton__wrapper">
         <h2 class="skeleton__title">The frame structure makes the machines <span>Wattsan</span> unique</h2>
-        <div class="skeleton__content skeleton-content">
-            <div class="swiper skeleton__gallery js-skeleton-gallery">
-                <ul class="swiper-wrapper skeleton-gallery__list">
+        <div class="skeleton__content  skeleton-content">
+            <div class="swiper skeleton__gallery  js-skeleton-gallery">
+                <ul class="swiper-wrapper  skeleton-gallery__list">
 
-                    <li class="swiper-slide skeleton-gallery__item skeleton-gallery-item">
+                    <li class="swiper-slide  skeleton-gallery__item  skeleton-gallery-item">
                         <h3 class="skeleton-gallery-item__title">Three Phase Stepper Motors 1</h3>
                         <p class="skeleton-gallery-item__paragraph">
                             – специально были изменены шаговые двигатели вместо двухфазных на трехфазные.
@@ -129,7 +149,7 @@
                             благодаря своей исключительной надежности</p>
                     </li>
 
-                    <li class="swiper-slide skeleton-gallery__item skeleton-gallery-item">
+                    <li class="swiper-slide skeleton-gallery__item  skeleton-gallery-item">
                         <h3 class="skeleton-gallery-item__title">Three Phase Stepper Motors 2</h3>
                         <p class="skeleton-gallery-item__paragraph">
                             – специально были изменены шаговые двигатели вместо двухфазных на трехфазные.
@@ -141,7 +161,7 @@
                             благодаря своей исключительной надежности</p>
                     </li>
 
-                    <li class="swiper-slide skeleton-gallery__item skeleton-gallery-item">
+                    <li class="swiper-slide skeleton-gallery__item  skeleton-gallery-item">
                         <h3 class="skeleton-gallery-item__title">Three Phase Stepper Motors 3</h3>
                         <p class="skeleton-gallery-item__paragraph">
                             – специально были изменены шаговые двигатели вместо двухфазных на трехфазные.
@@ -153,7 +173,7 @@
                             благодаря своей исключительной надежности</p>
                     </li>
 
-                    <li class="swiper-slide skeleton-gallery__item skeleton-gallery-item">
+                    <li class="swiper-slide skeleton-gallery__item  skeleton-gallery-item">
                         <h3 class="skeleton-gallery-item__title">Three Phase Stepper Motors 4</h3>
                         <p class="skeleton-gallery-item__paragraph">
                             – специально были изменены шаговые двигатели вместо двухфазных на трехфазные.
@@ -170,7 +190,7 @@
             <div class="swiper skeleton__thumbs js-skeleton-thumbs">
                 <ul class="swiper-wrapper skeleton-thumbs__list">
 
-                    <li class="swiper-slide  skeleton-thumbs__slide  skeleton-thumbs__item skeleton-thumbs-item">
+                    <li class="swiper-slide  skeleton-thumbs__slide  skeleton-thumbs__item  skeleton-thumbs-item">
                         <div class="skeleton-thumbs-item__circle"></div>
                         <span class="skeleton-thumbs-item__text">Three Phase Stepper Motors 1</span>
                         <picture>
@@ -181,7 +201,7 @@
                         </picture>
                     </li>
 
-                    <li class="swiper-slide  skeleton-thumbs__slide  skeleton-thumbs__item skeleton-thumbs-item">
+                    <li class="swiper-slide  skeleton-thumbs__slide  skeleton-thumbs__item  skeleton-thumbs-item">
                         <div class="skeleton-thumbs-item__circle"></div>
                         <span class="skeleton-thumbs-item__text">Three Phase Stepper Motors 1</span>
                         <picture>
@@ -192,7 +212,7 @@
                         </picture>
                     </li>
 
-                    <li class="swiper-slide  skeleton-thumbs__slide  skeleton-thumbs__item skeleton-thumbs-item">
+                    <li class="swiper-slide  skeleton-thumbs__slide  skeleton-thumbs__item  skeleton-thumbs-item">
                         <div class="skeleton-thumbs-item__circle"></div>
                         <span class="skeleton-thumbs-item__text">Three Phase Stepper Motors 1</span>
                         <picture>
@@ -203,7 +223,7 @@
                         </picture>
                     </li>
 
-                    <li class="swiper-slide  skeleton-thumbs__slide  skeleton-thumbs__item skeleton-thumbs-item">
+                    <li class="swiper-slide  skeleton-thumbs__slide  skeleton-thumbs__item  skeleton-thumbs-item">
                         <div class="skeleton-thumbs-item__circle"></div>
                         <span class="skeleton-thumbs-item__text">Three Phase Stepper Motors 1</span>
                         <picture>
@@ -218,27 +238,120 @@
             </div>
         </div>
     </div>
+
+
+
+    <div class="container skeleton__wrapper--mobile">
+
+        <div class="question js-accordion">
+            <button class="question__trigger" type="button">
+                Three Phase Stepper Motors 1
+            </button>
+        </div>
+        <div class="answer">
+            <div>
+                – специально были изменены шаговые двигатели вместо двухфазных на трехфазные.
+                Преимуществом данный двигателей является уменьшенная величина шага относительно
+                аналогов, и
+                как следствие увеличено качество в первую очередь гравировки, а так же
+                улучшена плавность хода, что особенно видно при резке акрила и толстой
+                фанеры. Как правило данные двигатели служат у клиентов от трех лет и более,
+                благодаря своей исключительной надежности
+            </div>
+        </div>
+        <div class="question js-accordion">
+            <button class="question__trigger" type="button">
+                Second Question?
+            </button>
+        </div>
+        <div class="answer">
+            <div class="answer__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, itaque quisquam? Quia cum alias in, beatae soluta dicta fuga corrupti magni? Alias minus nostrum qui at corporis, magni optio ipsam!
+            </div>
+        </div>
+
+        <script>
+            function findElements(object, element) {
+                const instance = object;
+                instance.element = element;
+                instance.target = element.nextElementSibling;
+            }
+
+            function hideElement(object) {
+                const instance = object;
+                const { target } = instance;
+                target.style.height = null;
+                instance.isActive = false;
+            }
+
+            function showElement(object) {
+                const instance = object;
+                const { target, height } = instance;
+                target.style.height = `${height}px`;
+                instance.isActive = true;
+            }
+
+            function changeElementStatus(instance) {
+                if (instance.isActive) {
+                    hideElement(instance);
+                } else {
+                    showElement(instance);
+                }
+            }
+
+            function measureHeight(object) {
+                const instance = object;
+                instance.height = object.target.firstElementChild.clientHeight;
+            }
+
+            function subscribe(instance) {
+                instance.element.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    changeElementStatus(instance);
+                });
+                window.addEventListener('resize', () => measureHeight(instance));
+            }
+
+            function accordion(element) {
+                const instance = {};
+
+                function init() {
+                    findElements(instance, element);
+                    measureHeight(instance);
+                    subscribe(instance);
+                }
+
+                init();
+            }
+
+            const elements = [...document.querySelectorAll('.js-accordion')];
+            elements.forEach(accordion);
+
+        </script>
+
+
+    </div>
 </section>
 
 <section class="purchase">
-    <div class="container purchase__wrapper">
+    <div class="container  purchase__wrapper">
         <h2 class="purchase__title">Purchase procedure</h2>
         <ul class="purchase__list">
-            <li class="purchase__item purchase-item">
+            <li class="purchase__item  purchase-item">
                 <div class="purchase-item__wrapper">
-                    <svg class="purchase__svg purchase__svg--choice" width="54" height="54">
+                    <svg class="purchase__svg  purchase__svg--choice" width="54" height="54">
                         <use xlink:href="#icon-purchase-choice"></use>
                     </svg>
-                    <div class="purchase-item__content purchase-item-content">
+                    <div class="purchase-item__content  purchase-item-content">
                         <h3 class="purchase-item-content__title">Choice of equipment</h3>
                         <p class="purchase-item-content__paragraph">Together with our specialist, you choose the
                             equipment and discuss the complete set of the machine.</p>
                     </div>
                 </div>
             </li>
-            <li class="purchase__item purchase-item">
+            <li class="purchase__item  purchase-item">
                 <div class="purchase-item__wrapper">
-                    <svg class="purchase__svg purchase__svg--awards" width="54" height="54">
+                    <svg class="purchase__svg  purchase__svg--awards" width="54" height="54">
                         <use xlink:href="#icon-purchase-awards"></use>
                     </svg>
                     <div class="purchase-item__content purchase-item-content">
@@ -248,9 +361,9 @@
                     </div>
                 </div>
             </li>
-            <li class="purchase__item purchase-item">
+            <li class="purchase__item  purchase-item">
                 <div class="purchase-item__wrapper">
-                    <svg class="purchase__svg purchase__svg--contract" width="54" height="54">
+                    <svg class="purchase__svg  purchase__svg--contract" width="54" height="54">
                         <use xlink:href="#icon-purchase-contract"></use>
                     </svg>
                     <div class="purchase-item__content purchase-item-content">
@@ -260,36 +373,36 @@
                     </div>
                 </div>
             </li>
-            <li class="purchase__item purchase-item">
+            <li class="purchase__item  purchase-item">
                 <div class="purchase-item__wrapper">
-                    <svg class="purchase__svg purchase__svg--delivery" width="54" height="54">
+                    <svg class="purchase__svg  purchase__svg--delivery" width="54" height="54">
                         <use xlink:href="#icon-purchase-delivery"></use>
                     </svg>
-                    <div class="purchase-item__content purchase-item-content">
+                    <div class="purchase-item__content  purchase-item-content">
                         <h3 class="purchase-item-content__title">Choice of equipment</h3>
                         <p class="purchase-item-content__paragraph">Together with our specialist, you choose the
                             equipment and discuss the complete set of the machine.</p>
                     </div>
                 </div>
             </li>
-            <li class="purchase__item purchase-item">
+            <li class="purchase__item  purchase-item">
                 <div class="purchase-item__wrapper">
-                    <svg class="purchase__svg purchase__svg--payments" width="54" height="54">
+                    <svg class="purchase__svg  purchase__svg--payments" width="54" height="54">
                         <use xlink:href="#icon-purchase-payment"></use>
                     </svg>
-                    <div class="purchase-item__content purchase-item-content">
+                    <div class="purchase-item__content  purchase-item-content">
                         <h3 class="purchase-item-content__title">Choice of equipment</h3>
                         <p class="purchase-item-content__paragraph">Together with our specialist, you choose the
                             equipment and discuss the complete set of the machine.</p>
                     </div>
                 </div>
             </li>
-            <li class="purchase__item purchase-item">
+            <li class="purchase__item  purchase-item">
                 <div class="purchase-item__wrapper">
-                    <svg class="purchase__svg purchase__svg-worker" width="54" height="54">
+                    <svg class="purchase__svg  purchase__svg-worker" width="54" height="54">
                         <use xlink:href="#icon-purchase-worker"></use>
                     </svg>
-                    <div class="purchase-item__content purchase-item-content">
+                    <div class="purchase-item__content  purchase-item-content">
                         <h3 class="purchase-item-content__title">Choice of equipment</h3>
                         <p class="purchase-item-content__paragraph">Together with our specialist, you choose the
                             equipment and discuss the complete set of the machine.</p>
@@ -347,11 +460,12 @@
             </li>
             <li class="reviews__item  reviews-item">
                 <div class="reviews-item__media">
-                    <picture>
-                        <source type="image/webp" srcset="/img/reviews/review-img1.webp">
-                        <img class="reviews-item__img" src="/img/reviews/review-img1.png" width="291" height="179"
-                             alt="review" loading="lazy">
-                    </picture>
+                    <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                        <img class="reviews-item__img" src="/img/reviews/review-youtube.png" width="291" height="179" alt="review" loading="lazy">
+                        <svg class="reviews-item__svg" width="63" height="64">
+                            <use xlink:href="#icon-reviews-youtube"></use>
+                        </svg>
+                    </a>
                 </div>
                 <blockquote class="reviews-item__text">
                     <p class="reviews-item__paragraph">The fiber laser produces a beam of infrared light that is focused down to a 0.005" (0.13mm) spot. </p>
@@ -387,10 +501,91 @@
     </div>
 </section>
 
+<!--<style>-->
+<!--    html,-->
+<!--    body {-->
+<!--        position: relative;-->
+<!--        height: 100%;-->
+<!--    }-->
+
+<!--    body {-->
+<!--        background: #eee;-->
+<!--        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;-->
+<!--        font-size: 14px;-->
+<!--        color: #000;-->
+<!--        margin: 0;-->
+<!--        padding: 0;-->
+<!--    }-->
+
+<!--    .swiper {-->
+<!--        width: 100%;-->
+<!--        height: 100%;-->
+<!--    }-->
+
+<!--    .swiper-slide {-->
+<!--        text-align: center;-->
+<!--        font-size: 18px;-->
+<!--        background: #fff;-->
+
+<!--        /* Center slide text vertically */-->
+<!--        display: -webkit-box;-->
+<!--        display: -ms-flexbox;-->
+<!--        display: -webkit-flex;-->
+<!--        display: flex;-->
+<!--        -webkit-box-pack: center;-->
+<!--        -ms-flex-pack: center;-->
+<!--        -webkit-justify-content: center;-->
+<!--        justify-content: center;-->
+<!--        -webkit-box-align: center;-->
+<!--        -ms-flex-align: center;-->
+<!--        -webkit-align-items: center;-->
+<!--        align-items: center;-->
+<!--    }-->
+
+<!--    .swiper-slide img {-->
+<!--        display: block;-->
+<!--        width: 100%;-->
+<!--        height: 100%;-->
+<!--        object-fit: cover;-->
+<!--    }-->
+<!--</style>-->
+<!--</head>-->
+
+<!--<body>-->
+<!--&lt;!&ndash; Swiper &ndash;&gt;-->
+<!--<div class="swiper mySwiper">-->
+<!--    <div class="swiper-wrapper">-->
+<!--        <div class="swiper-slide">Slide 1</div>-->
+<!--        <div class="swiper-slide">Slide 2</div>-->
+<!--        <div class="swiper-slide">Slide 3</div>-->
+<!--        <div class="swiper-slide">Slide 4</div>-->
+<!--        <div class="swiper-slide">Slide 5</div>-->
+<!--        <div class="swiper-slide">Slide 6</div>-->
+<!--        <div class="swiper-slide">Slide 7</div>-->
+<!--        <div class="swiper-slide">Slide 8</div>-->
+<!--        <div class="swiper-slide">Slide 9</div>-->
+<!--    </div>-->
+<!--    <div class="swiper-button-next"></div>-->
+<!--    <div class="swiper-button-prev"></div>-->
+<!--</div>-->
+
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js"></script>
 
 <!-- Initialize Swiper -->
+
+<!--&lt;!&ndash; Initialize Swiper &ndash;&gt;-->
+<!--<script>-->
+<!--    var swiper = new Swiper(".mySwiper", {-->
+<!--        navigation: {-->
+<!--            nextEl: ".swiper-button-next",-->
+<!--            prevEl: ".swiper-button-prev",-->
+<!--        },-->
+<!--    });-->
+<!--</script>-->
+
 <script>
+
 
     var swiper = new Swiper(".js-skeleton-thumbs", {
         spaceBetween: 10,

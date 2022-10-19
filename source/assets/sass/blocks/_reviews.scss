@@ -35,6 +35,30 @@
     flex-direction: column;
     background-color: $grey-color;
 
+    &__media {
+      position: relative;
+
+      &:hover,
+      &:focus,
+      &:active {
+        .reviews-item__svg {
+          fill: #CF1A01;
+          transform: scale(1.2) translate(-50%, -50%);
+        }
+      }
+    }
+
+    &__svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      fill: #DD1B00;
+      transform: translate(-50%, -50%);
+      transform-origin: 0 0;
+      transition: transform 0.3s, fill 0.3s;
+    }
+
+
     &__img {
       @media (max-width: 1365px) {
         width: 100%;
