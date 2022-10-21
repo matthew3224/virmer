@@ -1,0 +1,26 @@
+.faq {
+
+  &__wrapper {
+    padding: 0 120px;
+  }
+
+  &__button {
+    border: none;
+    background-color: transparent;
+  }
+}
+ .question {
+   margin: 10px 0 0;
+ }
+
+.question__trigger {
+  width: 100%;
+  text-align: left;
+}
+
+.faq__answer {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.5s;
+}
+

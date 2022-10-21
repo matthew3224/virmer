@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="/assets/css/style.css">
+
     <title>Document</title>
 </head>
 <style>
@@ -132,7 +133,7 @@
 
 <section class="skeleton">
     <div class="container  skeleton__wrapper">
-        <h2 class="skeleton__title">The frame structure makes the machines <span>Wattsan</span> unique</h2>
+        <h2 class="skeleton__title">The frame structure makes the machines <span>Wattsan unique</h2>
         <div class="skeleton__content  skeleton-content">
             <div class="swiper skeleton__gallery  js-skeleton-gallery">
                 <ul class="swiper-wrapper  skeleton-gallery__list">
@@ -192,7 +193,7 @@
 
                     <li class="swiper-slide  skeleton-thumbs__slide  skeleton-thumbs__item  skeleton-thumbs-item">
                         <div class="skeleton-thumbs-item__circle"></div>
-                        <span class="skeleton-thumbs-item__text">Three Phase Stepper Motors 1</span>
+                        <span class="skeleton-thumbs-item__text">Three Phase Stepper Motors 1
                         <picture>
                             <source type="image/webp" srcset="/img/skeleton/cnc-img.webp">
                             <img class="skeleton-thumbs-item__img" width="149" height="149"
@@ -203,7 +204,7 @@
 
                     <li class="swiper-slide  skeleton-thumbs__slide  skeleton-thumbs__item  skeleton-thumbs-item">
                         <div class="skeleton-thumbs-item__circle"></div>
-                        <span class="skeleton-thumbs-item__text">Three Phase Stepper Motors 1</span>
+                        <span class="skeleton-thumbs-item__text">Three Phase Stepper Motors 1
                         <picture>
                             <source type="image/webp" srcset="/img/skeleton/cnc-img.webp">
                             <img class="skeleton-thumbs-item__img" width="149" height="149"
@@ -214,7 +215,7 @@
 
                     <li class="swiper-slide  skeleton-thumbs__slide  skeleton-thumbs__item  skeleton-thumbs-item">
                         <div class="skeleton-thumbs-item__circle"></div>
-                        <span class="skeleton-thumbs-item__text">Three Phase Stepper Motors 1</span>
+                        <span class="skeleton-thumbs-item__text">Three Phase Stepper Motors 1
                         <picture>
                             <source type="image/webp" srcset="/img/skeleton/cnc-img.webp">
                             <img class="skeleton-thumbs-item__img" width="149" height="149"
@@ -225,7 +226,7 @@
 
                     <li class="swiper-slide  skeleton-thumbs__slide  skeleton-thumbs__item  skeleton-thumbs-item">
                         <div class="skeleton-thumbs-item__circle"></div>
-                        <span class="skeleton-thumbs-item__text">Three Phase Stepper Motors 1</span>
+                        <span class="skeleton-thumbs-item__text">Three Phase Stepper Motors 1
                         <picture>
                             <source type="image/webp" srcset="/img/skeleton/cnc-img.webp">
                             <img class="skeleton-thumbs-item__img" width="149" height="149"
@@ -239,98 +240,6 @@
         </div>
     </div>
 
-
-
-    <div class="container skeleton__wrapper--mobile">
-
-        <div class="question js-accordion">
-            <button class="question__trigger" type="button">
-                Three Phase Stepper Motors 1
-            </button>
-        </div>
-        <div class="answer">
-            <div>
-                – специально были изменены шаговые двигатели вместо двухфазных на трехфазные.
-                Преимуществом данный двигателей является уменьшенная величина шага относительно
-                аналогов, и
-                как следствие увеличено качество в первую очередь гравировки, а так же
-                улучшена плавность хода, что особенно видно при резке акрила и толстой
-                фанеры. Как правило данные двигатели служат у клиентов от трех лет и более,
-                благодаря своей исключительной надежности
-            </div>
-        </div>
-        <div class="question js-accordion">
-            <button class="question__trigger" type="button">
-                Second Question?
-            </button>
-        </div>
-        <div class="answer">
-            <div class="answer__content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, itaque quisquam? Quia cum alias in, beatae soluta dicta fuga corrupti magni? Alias minus nostrum qui at corporis, magni optio ipsam!
-            </div>
-        </div>
-
-        <script>
-            function findElements(object, element) {
-                const instance = object;
-                instance.element = element;
-                instance.target = element.nextElementSibling;
-            }
-
-            function hideElement(object) {
-                const instance = object;
-                const { target } = instance;
-                target.style.height = null;
-                instance.isActive = false;
-            }
-
-            function showElement(object) {
-                const instance = object;
-                const { target, height } = instance;
-                target.style.height = `${height}px`;
-                instance.isActive = true;
-            }
-
-            function changeElementStatus(instance) {
-                if (instance.isActive) {
-                    hideElement(instance);
-                } else {
-                    showElement(instance);
-                }
-            }
-
-            function measureHeight(object) {
-                const instance = object;
-                instance.height = object.target.firstElementChild.clientHeight;
-            }
-
-            function subscribe(instance) {
-                instance.element.addEventListener('click', (event) => {
-                    event.preventDefault();
-                    changeElementStatus(instance);
-                });
-                window.addEventListener('resize', () => measureHeight(instance));
-            }
-
-            function accordion(element) {
-                const instance = {};
-
-                function init() {
-                    findElements(instance, element);
-                    measureHeight(instance);
-                    subscribe(instance);
-                }
-
-                init();
-            }
-
-            const elements = [...document.querySelectorAll('.js-accordion')];
-            elements.forEach(accordion);
-
-        </script>
-
-
-    </div>
 </section>
 
 <section class="purchase">
@@ -415,7 +324,7 @@
 
 <section class="reviews">
     <div class="container  reviews__wrapper">
-        <h2 class="reviews__title"><span>Experiences</span> from enthusiastic users</h2>
+        <h2 class="reviews__title"><span>Experiences from enthusiastic users</h2>
         <ul class="reviews__list">
             <li class="reviews__item  reviews-item">
                 <div class="reviews-item__media">
@@ -426,13 +335,15 @@
                     </picture>
                 </div>
                 <blockquote class="reviews-item__text">
-                    <p class="reviews-item__paragraph">The fiber laser produces a beam of infrared light that is focused down to a 0.005" (0.13mm)
+                    <p class="reviews-item__paragraph">The fiber laser produces a beam of infrared light that is focused
+                        down to a 0.005" (0.13mm)
                         spot. The metal gets hot enough to melt, and an assist gas blows it through, creating the
                         cut.</p>
                     <div class="reviews-item__meta">
                         <picture>
                             <source type="image/webp" srcset="/img/reviews/reviews-borsh.webp">
-                            <img class="reviews-item__avatar" src="/img/reviews/reviews-borsh.png" width="29" height="29" alt="Borsh" loading="lazy">
+                            <img class="reviews-item__avatar" src="/img/reviews/reviews-borsh.png" width="29"
+                                 height="29" alt="Borsh" loading="lazy">
                         </picture>
                         <cite class="reviews-item__author">Anastasia Borsh</cite>
                     </div>
@@ -447,12 +358,14 @@
                     </picture>
                 </div>
                 <blockquote class="reviews-item__text">
-                    <p class="reviews-item__paragraph">The fiber laser produces a beam of infrared light that is focused down to a 0.005" (0.13mm) spot.
+                    <p class="reviews-item__paragraph">The fiber laser produces a beam of infrared light that is focused
+                        down to a 0.005" (0.13mm) spot.
                         The metal gets hot enough to melt, and an assist gas blows it through, creating the cut</p>
                     <div class="reviews-item__meta">
                         <picture>
                             <source type="image/webp" srcset="/img/reviews/reviews-mick.webp">
-                            <img class="reviews-item__avatar" src="/img/reviews/reviews-mick.png" width="29" height="29" alt="Mick" loading="lazy">
+                            <img class="reviews-item__avatar" src="/img/reviews/reviews-mick.png" width="29" height="29"
+                                 alt="Mick" loading="lazy">
                         </picture>
                         <cite class="reviews-item__author">Mick Schummaher</cite>
                     </div>
@@ -461,18 +374,21 @@
             <li class="reviews__item  reviews-item">
                 <div class="reviews-item__media">
                     <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                        <img class="reviews-item__img" src="/img/reviews/review-youtube.png" width="291" height="179" alt="review" loading="lazy">
+                        <img class="reviews-item__img" src="/img/reviews/review-youtube.png" width="291" height="179"
+                             alt="review" loading="lazy">
                         <svg class="reviews-item__svg" width="63" height="64">
                             <use xlink:href="#icon-reviews-youtube"></use>
                         </svg>
                     </a>
                 </div>
                 <blockquote class="reviews-item__text">
-                    <p class="reviews-item__paragraph">The fiber laser produces a beam of infrared light that is focused down to a 0.005" (0.13mm) spot. </p>
+                    <p class="reviews-item__paragraph">The fiber laser produces a beam of infrared light that is focused
+                        down to a 0.005" (0.13mm) spot. </p>
                     <div class="reviews-item__meta">
                         <picture>
                             <source type="image/webp" srcset="/img/reviews/reviews-max.webp">
-                            <img class="reviews-item__avatar" src="/img/reviews/reviews-max.png" width="29" height="29" alt="Max" loading="lazy">
+                            <img class="reviews-item__avatar" src="/img/reviews/reviews-max.png" width="29" height="29"
+                                 alt="Max" loading="lazy">
                         </picture>
                         <cite class="reviews-item__author">Max Verstappen</cite>
                     </div>
@@ -487,11 +403,13 @@
                     </picture>
                 </div>
                 <blockquote class="reviews-item__text">
-                    <p class="reviews-item__paragraph">The fiber laser produces a beam of infrared light that is focused down to a 0.005" (0.13mm) spot. </p>
+                    <p class="reviews-item__paragraph">The fiber laser produces a beam of infrared light that is focused
+                        down to a 0.005" (0.13mm) spot. </p>
                     <div class="reviews-item__meta">
                         <picture>
                             <source type="image/webp" srcset="/img/reviews/reviews-louie.webp">
-                            <img class="reviews-item__avatar" src=".img/reviews/reviews-louie.png" width="29" height="29" alt="Louie" loading="lazy">
+                            <img class="reviews-item__avatar" src=".img/reviews/reviews-louie.png" width="29"
+                                 height="29" alt="Louie" loading="lazy">
                         </picture>
                         <cite class="reviews-item__author">Louie Ou</cite>
                     </div>
@@ -501,92 +419,106 @@
     </div>
 </section>
 
-<!--<style>-->
-<!--    html,-->
-<!--    body {-->
-<!--        position: relative;-->
-<!--        height: 100%;-->
-<!--    }-->
+<section class="faq">
+    <div class="container faq__wrapper">
+        <div class="faq__question js-accordion-faq">
+            <button class="faq__button" type="button">
+                Three Phase Stepper Motors 1
+            </button>
+        </div>
+        <div class="faq__answer">
+            <div>
+                – специально были изменены шаговые двигатели вместо двухфазных на трехфазные.
+                Преимуществом данный двигателей является уменьшенная величина шага относительно
+                аналогов, и
+                как следствие увеличено качество в первую очередь гравировки, а так же
+                улучшена плавность хода, что особенно видно при резке акрила и толстой
+                фанеры. Как правило данные двигатели служат у клиентов от трех лет и более,
+                благодаря своей исключительной надежности
+            </div>
+        </div>
+        <div class="faq__question js-accordion-faq">
+            <button class="faq__button" type="button">
+                Three Phase Stepper Motors 1
+            </button>
+        </div>
+        <div class="faq__answer">
+            <div>
+                – специально были изменены шаговые двигатели вместо двухфазных на трехфазные.
+                Преимуществом данный двигателей является уменьшенная величина шага относительно
+                аналогов, и
+                как следствие увеличено качество в первую очередь гравировки, а так же
+                улучшена плавность хода, что особенно видно при резке акрила и толстой
+                фанеры. Как правило данные двигатели служат у клиентов от трех лет и более,
+                благодаря своей исключительной надежности
+            </div>
+        </div>
+    </div>
+</section>
 
-<!--    body {-->
-<!--        background: #eee;-->
-<!--        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;-->
-<!--        font-size: 14px;-->
-<!--        color: #000;-->
-<!--        margin: 0;-->
-<!--        padding: 0;-->
-<!--    }-->
+    <script>
+        function findElements(object, element) {
+            const instance = object;
+            instance.element = element;
+            instance.target = element.nextElementSibling;
+        }
 
-<!--    .swiper {-->
-<!--        width: 100%;-->
-<!--        height: 100%;-->
-<!--    }-->
+        function hideElement(object) {
+            const instance = object;
+            const { target } = instance;
+            target.style.height = null;
+            instance.isActive = false;
+        }
 
-<!--    .swiper-slide {-->
-<!--        text-align: center;-->
-<!--        font-size: 18px;-->
-<!--        background: #fff;-->
+        function showElement(object) {
+            const instance = object;
+            const { target, height } = instance;
+            target.style.height = `${height}px`;
+            instance.isActive = true;
+        }
 
-<!--        /* Center slide text vertically */-->
-<!--        display: -webkit-box;-->
-<!--        display: -ms-flexbox;-->
-<!--        display: -webkit-flex;-->
-<!--        display: flex;-->
-<!--        -webkit-box-pack: center;-->
-<!--        -ms-flex-pack: center;-->
-<!--        -webkit-justify-content: center;-->
-<!--        justify-content: center;-->
-<!--        -webkit-box-align: center;-->
-<!--        -ms-flex-align: center;-->
-<!--        -webkit-align-items: center;-->
-<!--        align-items: center;-->
-<!--    }-->
+        function changeElementStatus(instance) {
+            if (instance.isActive) {
+                hideElement(instance);
+            } else {
+                showElement(instance);
+            }
+        }
 
-<!--    .swiper-slide img {-->
-<!--        display: block;-->
-<!--        width: 100%;-->
-<!--        height: 100%;-->
-<!--        object-fit: cover;-->
-<!--    }-->
-<!--</style>-->
-<!--</head>-->
+        function measureHeight(object) {
+            const instance = object;
+            instance.height = object.target.firstElementChild.clientHeight;
+        }
 
-<!--<body>-->
-<!--&lt;!&ndash; Swiper &ndash;&gt;-->
-<!--<div class="swiper mySwiper">-->
-<!--    <div class="swiper-wrapper">-->
-<!--        <div class="swiper-slide">Slide 1</div>-->
-<!--        <div class="swiper-slide">Slide 2</div>-->
-<!--        <div class="swiper-slide">Slide 3</div>-->
-<!--        <div class="swiper-slide">Slide 4</div>-->
-<!--        <div class="swiper-slide">Slide 5</div>-->
-<!--        <div class="swiper-slide">Slide 6</div>-->
-<!--        <div class="swiper-slide">Slide 7</div>-->
-<!--        <div class="swiper-slide">Slide 8</div>-->
-<!--        <div class="swiper-slide">Slide 9</div>-->
-<!--    </div>-->
-<!--    <div class="swiper-button-next"></div>-->
-<!--    <div class="swiper-button-prev"></div>-->
-<!--</div>-->
+        function subscribe(instance) {
+            instance.element.addEventListener('click', (event) => {
+                event.preventDefault();
+                changeElementStatus(instance);
+            });
+            window.addEventListener('resize', () => measureHeight(instance));
+        }
+
+        function accordion(element) {
+            const instance = {};
+
+            function init() {
+                findElements(instance, element);
+                measureHeight(instance);
+                subscribe(instance);
+            }
+
+            init();
+        }
+
+        const elements = [...document.querySelectorAll('.js-accordion-faq')];
+        elements.forEach(accordion);
+
+    </script>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js"></script>
 
-<!-- Initialize Swiper -->
-
-<!--&lt;!&ndash; Initialize Swiper &ndash;&gt;-->
-<!--<script>-->
-<!--    var swiper = new Swiper(".mySwiper", {-->
-<!--        navigation: {-->
-<!--            nextEl: ".swiper-button-next",-->
-<!--            prevEl: ".swiper-button-prev",-->
-<!--        },-->
-<!--    });-->
-<!--</script>-->
-
 <script>
-
-
     var swiper = new Swiper(".js-skeleton-thumbs", {
         spaceBetween: 10,
         slidesPerView: 3,
@@ -607,5 +539,56 @@
     });
 </script>
 
+<p>Al comprar una máquina CNC, suele ser bastante difícil ponerla en marcha y hacerla funcionar correctamente si no se tiene una formación especial. A lo largo de los años, hemos aprendido todos los fundamentos del mecanizado CNC.</p>
+<p>Sólo suministramos este tipo de equipos, para aquellos quienes podemos ofrecer un servicio integral. </p>
+<p>Nuestros ingenieros han sido formados según las normas técnicas de Wattsan. Esta experiencia nos permite reducir al mínimo las devoluciones por motivos de garantía.</p>
+<h2>El control de calidad en 3 pasos</h2>
+<p>Antes de realizar el envío a un cliente, nuestros equipos CNC se someten a un control de calidad de 3 pasos. No importa si se trata de un marcador láser o una máquina de corte de metal.</p>
+<ol>
+    <li> Primero, en la fábrica de Wattsan.</li>
+    <li> Luego, a la llegada a nuestro almacén en los Países Bajos.</li>
+    <li> Por último, antes de ser enviados a nuestro cliente.</li>
+</ol>
+<p>Este control de calidad de tres pasos garantiza un equipo de alta calidad para nuestros clientes y para nosotros.</p>
+<h2>Formación</h2>
+<p>Nuestro propósito es enseñar a manejar los equipos CNC, a trabajar con diferentes materiales, a organizar la producción y mucho más.</p>
+<p>Tras recibir la experiencia y la formación técnica de los ingenieros y el personal técnico de Wattsan, nuestro personal dará a nuestros clientes y socios la formación suficiente para utilizar la máquina por su cuenta.</p>
+<p>La formación puede llevarse a cabo tanto offline como online.</p>
+<h2>Atención al cliente</h2>
+<p>Nuestro ingeniero se desplaza a sus instalaciones para la instalación y la asistencia técnica.</p>
+<p>Cuando sea necesario, organizaremos una videoconferencia entre usted y el ingeniero.</p>
+<p>Nuestra línea de atención al cliente está a su disposición para ayudarle en la selección de equipos, responder a sus preguntas sobre las máquinas y ofrecerle soluciones a los problemas técnicos.</p>
+<p>La consulta, la demostración, las pruebas grabadas y la asistencia técnica pueden realizarse a distancia.</p>
+
+<p>&ldquo;Cada propietario de una máquina Wattsan recibe soporte online de por vida.&rdquo;</p>
+<h2>Nuestros ingenieros</h2>
+<p>En Virmer, existe un sistema de clasificación interna para nuestros ingenieros. La formación y la certificación sobre la puesta en marcha y los nuevos equipos tienen lugar cada seis meses</p>
+
+<p>Los nuevos empleados se someten a un programa de formación obligatorio supervisado por veteranos con experiencia.</p>
+
+<p>Nivel 4 &ndash; trabajar en el almacén preparando máquinas y realizando demostraciones.</p>
+<p>Nivel 3 &ndash; Máquinas láser de CO2 y fresadoras CNC.</p>
+<p>Nivel 2 &ndash; Máquinas láser de CO2 y fresadoras CNC, marcadores de fibra, máquinas de soldadura láser y máquinas de limpieza láser.</p>
+<p>Nivel 1 &ndash; cortadoras de metal de fibra, máquinas láser de CO2 y fresadoras CNC, marcadores de fibra, máquinas de soldadura láser y máquinas de limpieza láser.</p>
+
+<p>&ldquo;Nuestra tarea es mantener sus máquinas en funcionamiento&rdquo;</p>
+<h2>Garantía</h2>
+<p>Nuestros equipos tienen una garantía de 24 meses que puede ampliarse hasta 60 meses.</p>
+<h2>Qué obtiene con el servicio de asistencia de Virmer?</h2>
+<p>Virmer está preparado para dar toda la información necesaria sobre el trabajo con máquinas CNC y ofrece formación para usted y sus operarios. En el futuro, podrá manejar su equipo CNC con confianza y producir productos de calidad.</p>
+<p>Póngase en contacto con nosotros para que le ayudemos con las siguientes preguntas:</p>
+<ul>
+    <li>Puesta en marcha de los equipos en sus instalaciones.</li>
+    <li>Formación de sus operarios para manejar máquinas CNC.</li>
+    <li>Pruebas de producción con sus materiales y recomendaciones sobre cómo trabajar con el equipo.</li>
+    <li>Realización de un examen para operadores de máquinas con el jefe de producción.</li>
+    <li>Comprobación de los conocimientos del operador en línea después de una semana de trabajo.</li>
+    <li>Información y asesoramiento sobre el funcionamiento de los equipos.</li>
+</ul>
+
+<p>Nuestra misión es hacer de cada uno de nuestros clientes un mejor negocio!</p>
+
 </body>
 </html>
+
+
