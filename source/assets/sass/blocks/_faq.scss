@@ -7,20 +7,67 @@
   &__button {
     border: none;
     background-color: transparent;
+
+  }
+
+  &__question {
+    margin: 10px 0 0;
+
+    &--active {
+      .faq__button {
+        color: $yellow-color;
+      }
+    }
+  }
+
+  &__answer {
+    overflow: hidden;
+    height: 0;
+    transition: height 0.5s;
   }
 }
- .question {
-   margin: 10px 0 0;
- }
 
-.question__trigger {
-  width: 100%;
-  text-align: left;
+@-webkit-keyframes plus-animation {
+  0% {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+  }
+  20% {
+    -webkit-transform: rotate(60deg) scale(0.93);
+    transform: rotate(60deg) scale(0.93);
+  }
+  55% {
+    -webkit-transform: rotate(35deg) scale(0.97);
+    transform: rotate(35deg) scale(0.97);
+  }
+  80% {
+    -webkit-transform: rotate(48deg) scale(0.94);
+    transform: rotate(48deg) scale(0.94);
+  }
+  100% {
+    -webkit-transform: rotate(45deg) scale(0.95);
+    transform: rotate(45deg) scale(0.95);
+  }
 }
-
-.faq__answer {
-  overflow: hidden;
-  height: 0;
-  transition: height 0.5s;
+@-webkit-keyframes plus-animation-reverse {
+  0% {
+    -webkit-transform: rotate(45deg) scale(0.95);
+    transform: rotate(45deg) scale(0.95);
+  }
+  20% {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+  }
+  55% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+  80% {
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+  }
 }
-
