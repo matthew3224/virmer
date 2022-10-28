@@ -1,33 +1,76 @@
 .faq {
 
-  &__wrapper {
-    padding: 0 120px;
+  &__list {
+    padding: 0 150px;
+
+    @media (max-width: 1023px) {
+      padding: 0 40px;
+    }
+
+    @media (max-width: 424px) {
+      padding: 0;
+    }
   }
 
   &__button {
+    position: relative;
+    width: 100%;
+    line-height: 1.35;
+    text-align: left;
     border: none;
     background-color: transparent;
 
+    &::before {
+      right: 0;
+      width: 1px;
+      height: 28px;
+    }
+
+    &::after {
+      right: -13px;
+      top: 13px;
+      width: 28px;
+      height: 1px;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      border-radius: 4px;
+      background: #000000;
+      animation: plus-animation-reverse .5s ease-out forwards;
+    }
   }
 
   &__question {
-    margin: 10px 0 0;
+    padding-top: 40px;
+    padding-bottom: 5px;
 
     &--active {
       .faq__button {
         color: $yellow-color;
+
+        &::before,
+        &::after {
+          animation: plus-animation .5s ease-out forwards;
+        }
+
       }
     }
   }
 
   &__answer {
-    overflow: hidden;
     height: 0;
+    font-size: 16px;
+    line-height: 1.57;
+    overflow: hidden;
     transition: height 0.5s;
   }
 }
 
-@-webkit-keyframes plus-animation {
+@keyframes plus-animation {
   0% {
     -webkit-transform: rotate(0) scale(1);
     transform: rotate(0) scale(1);
@@ -49,7 +92,8 @@
     transform: rotate(45deg) scale(0.95);
   }
 }
-@-webkit-keyframes plus-animation-reverse {
+
+@keyframes plus-animation-reverse {
   0% {
     -webkit-transform: rotate(45deg) scale(0.95);
     transform: rotate(45deg) scale(0.95);
