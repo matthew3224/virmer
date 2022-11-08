@@ -15,6 +15,13 @@
   z-index: 99;
   visibility: hidden;
 
+  &__opened {
+    position: fixed;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+  }
+
   &__wrap {
     flex-shrink: 0;
     flex-grow: 0;
@@ -39,13 +46,6 @@
     transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
     transform: scale(0.9);
     opacity: 0;
-  }
-
-  &__opened {
-    position: fixed;
-    right: 0;
-    left: 0;
-    overflow: hidden;
   }
 
   &__title {
@@ -108,9 +108,17 @@
 
       &__title {
         margin-bottom: 10px;
-        padding-left: 30px;
+        padding-left: 24px;
         font-size: 14px;
         background: url("/img/bgs/modal-star-bg.png") no-repeat left/contain;
+        background-image: -webkit-image-set(
+                        url("/img/bgs/modal-star-bg.webp") 1x,
+                        url("/img/bgs/modal-star-bg.png") 1x
+        );
+        background-image: image-set(
+                        url("/img/bgs/modal-star-bg.webp") type("image/webp") 1x,
+                        url("/img/bgs/modal-star-bg.png") type('image/jpg') 1x
+        );
       }
 
       &__text {
@@ -133,7 +141,7 @@
     line-height: 1.5;
     color: #28292F;
     background: #F7CE03;
-    transition: all 0.3s;
+    transition: all 0.15s;
 
     &:hover {
       color: #ffffff;
@@ -158,21 +166,21 @@
 
   &__close {
     position: absolute;
-    margin-top: 10px;
-    margin-right: 15px;
-    z-index: 10;
     top: 0;
     right: 0;
     display: block;
+    margin-top: 10px;
+    margin-right: 15px;
     width: 30px;
     height: 30px;
+    z-index: 10;
+    border: none;
+    font-size: 0;
     background-color: transparent;
     background-position: center center;
     background-repeat: no-repeat;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' stroke='%23fff' stroke-linecap='square' stroke-miterlimit='50' stroke-width='2' d='M22 2L2 22'/%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='square' stroke-miterlimit='50' stroke-width='2' d='M2 2l20 20'/%3E%3C/svg%3E");
     background-size: 18px 18px;
-    border: none;
-    font-size: 0;
     cursor: pointer;
     outline: none;
 
@@ -216,7 +224,7 @@
         width: 12px;
         height: 12px;
         border: 1px solid #5a5a5a;
-        transition-duration: .3s;
+        transition-duration: 0.3s;
         transition-timing-function: ease-in-out;
       }
 
@@ -247,6 +255,7 @@
 }
 
 @media all and (max-width: 767px) {
+
   .modal__close {
     top: 10px;
     right: 10px;
@@ -254,6 +263,7 @@
     height: 24px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' stroke='%23111' stroke-linecap='square' stroke-miterlimit='50' stroke-width='2' d='M22 2L2 22'/%3E%3Cpath fill='none' stroke='%23111' stroke-linecap='square' stroke-miterlimit='50' stroke-width='2' d='M2 2l20 20'/%3E%3C/svg%3E");
   }
+
   .modal__window {
     margin: 0;
   }

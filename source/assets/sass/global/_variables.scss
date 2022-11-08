@@ -2,16 +2,23 @@
 $font: 'TT Smalls Trial', Helvetica, sans-serif;
 $fontHeading: 'TT Norms Pro Trial Expanded', sans-serif;
 
-// Size
-$mainFontColor: #000000;
-$mainFontSize: 16px;
-$mainFontWeight: 400;
-$mainLineHeight: 1.4;
+// Other
+$mainYellow: #f7ce03;
+$mainRed: #dd1b00;
+$darkRed: #c71700;
+$darkBg: #090909;
+$mainGray: #bababa;
+$primaryLightBg: #f1f1f1;
 
-// Color
-$primary-color: #000000;
-$danger-color: #000000;
-$yellow-color: #F7CE03;
-$grey-color: #F6F6F6;
-$fontColorLighter: #000000;
+$neutral-secondary: #707070; // use as text color
+$neutral-third: #9b9b9b; // use as date color
+$neutral-fourth: #e3e3e3; // use as border
+$neutral-fifth: #f5f8fb; // use as bg info block
+$neutral-sixth: #808080; // use as text (e.g. breadcrumbs)
+$neutral-seven: #4a4a4a; // use as text (e.g. options)
 
+// Backgrounds
+$primary-bg: #f6f6f6; // use
+$primary-secondary-bg: #ededed; // use as bg after header (e.g. breadcrumbs)
+$primary-third-bg: #28292F; // use as bg (e.g. purchase)
+$primary-fourth-bg: #f6f6f6;
