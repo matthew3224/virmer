@@ -285,7 +285,6 @@ const skeletonThumbs = new Swiper(".js-skeleton-thumbs", {
     spaceBetween: 10,
     slidesPerView: 3,
     allowTouchMove: false,
-    freeMode: true,
     watchSlidesProgress: true,
 });
 const skeletonGallery = new Swiper(".js-skeleton-gallery", {
@@ -332,7 +331,7 @@ function changeElementStatus(instance) {
 
 function measureHeight(object) {
     const instance = object;
-    instance.height = object.target.firstElementChild.clientHeight;
+    instance.target.height = object.target.clientHeight;
 }
 
 function subscribe(instance) {
