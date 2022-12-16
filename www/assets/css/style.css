@@ -1118,7 +1118,7 @@ article > * + * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #FFFFFF;
-  max-width: 800px;
+  max-width: 850px;
   overflow: visible;
   -webkit-transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
   transition: opacity 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
@@ -1194,16 +1194,17 @@ article > * + * {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px;
-  min-width: 360px;
   color: #ffffff;
+  padding: 20px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("/img/bgs/modal-bg.png") no-repeat center/cover;
   background: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/bgs/modal-bg.png") no-repeat center/cover;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/bgs/modal-bg.png") no-repeat center/cover;
 }
 
 .modal-advantages__title {
-  font-size: 18px;
+  padding: 24px 0;
+  font-size: 17px;
+  text-align: center;
   line-height: 1.445;
   text-transform: uppercase;
   font-weight: bold;
@@ -1230,17 +1231,39 @@ article > * + * {
       -ms-flex-align: center;
           align-items: center;
   grid-column: 6 span;
-  padding-top: 25px;
-  border: 1px solid red;
+  width: 135px;
+  height: 90px;
+  border: 1px solid #F7CE03;
 }
 
 .modal-advantages-item__title {
-  margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 11px;
 }
 
 .modal-advantages-item__text {
   font-size: 12px;
+}
+
+.modal-advantages-item:nth-child(1) {
+  border-style: solid;
+  border-color: white transparent transparent white;
+  border-width: 1px;
+}
+
+.modal-advantages-item:nth-child(2) {
+  margin-left: -1px;
+}
+
+.modal-advantages-item:nth-child(3) {
+  margin-top: -1px;
+}
+
+.modal-advantages-item:nth-child(4) {
+  border-style: solid;
+  border-color: transparent white white transparent;
+  border-width: 1px;
+  margin-top: -1px;
+  margin-left: -1px;
 }
 
 .modal-advantages__img {
@@ -1250,6 +1273,36 @@ article > * + * {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.modal-advantages__questions {
+  padding: 24px 0;
+  text-align: center;
+}
+
+.modal-advantages__questions span {
+  font-size: 20px;
+  color: #F7CE03;
+}
+
+.modal-advantages__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.modal-advantages__contacts a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.modal-advantages__contacts a:nth-child(2) {
+  text-decoration: underline;
 }
 
 .modal__btn {
@@ -1384,6 +1437,197 @@ article > * + * {
           box-sizing: border-box;
 }
 
+.banner-lead {
+  max-height: 200px;
+  height: 100%;
+}
+
+.banner-lead__wrapper {
+  display: grid;
+  height: 100%;
+  color: #ffffff;
+}
+
+.banner-lead__content {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.banner-lead__title,
+.banner-lead__text {
+  line-height: 1.05;
+}
+
+.banner-lead__title {
+  font-size: clamp(2.4rem, 5vw, 4.8rem);
+  white-space: nowrap;
+  padding-bottom: 35px;
+}
+
+.banner-lead__text {
+  font-size: 18px;
+}
+
+.banner-lead__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  grid-row: 2;
+  font-size: 24px;
+  line-height: 1.225;
+  white-space: nowrap;
+  color: #ffffff;
+}
+
+.main-footer {
+  padding: 50px 0;
+  background-color: #000000;
+  color: #fff;
+}
+
+.main-footer__list {
+  line-height: 2.32;
+}
+
+.main-footer__column-language select {
+  background-color: inherit;
+  color: #fff;
+}
+
+.main-footer__title {
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #808080;
+}
+
+.main-footer__title--payments {
+  margin-bottom: 10px;
+}
+
+.main-footer__phone,
+.main-footer__email,
+.main-footer__address {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin: 15px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 17px;
+  color: #fff;
+}
+
+.main-footer__phone:before,
+.main-footer__email:before,
+.main-footer__address:before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.main-footer .social-title {
+  margin-bottom: 10px;
+}
+
+.main-footer__phone:before {
+  background: url(icon-phone-border.svg) center/contain no-repeat;
+}
+
+.main-footer__email:before {
+  background: url(icon-mail.svg) center/contain no-repeat;
+}
+
+.main-footer__address:before {
+  top: 3px;
+  background: url(icon-geo.svg) center/contain no-repeat;
+}
+
+.main-footer__item a,
+.main-footer__text a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-footer__payments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 25px;
+}
+
+.main-footer__payments img {
+  margin-right: 10px;
+}
+
+.main-footer__post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.main-footer__post-title {
+  font-size: 18px;
+}
+
+.main-footer__post-content {
+  margin-left: 10px;
+}
+
+.main-footer__map {
+  margin-bottom: 40px;
+}
+
+.main-footer__post-date {
+  font-size: 15px;
+  color: #b9b6b6;
+}
+
+.main-footer__top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 30px;
+}
+
+.main-header__logo-img {
+  height: auto;
+}
+
+.main-footer__map {
+  width: 100%;
+  height: auto;
+}
+
+.main-footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+}
+
+.main-footer__text {
+  margin-left: 20px;
+}
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social__item {
+  margin-right: 15px;
+}
+
 @media (min-width: 1152px) {
   .cases__list {
     display: grid;
@@ -1423,6 +1667,14 @@ article > * + * {
 
   .purchase__svg {
     width: 36px;
+  }
+
+  .banner-lead {
+    max-height: 135px;
+  }
+
+  .banner-lead__title {
+    padding-bottom: 10px;
   }
 }
 

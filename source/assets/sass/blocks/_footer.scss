@@ -1,0 +1,175 @@
+.main-footer {
+  padding: 50px 0;
+  background-color: #000000;
+  color: #fff;
+
+  &__list {
+    line-height: 2.32;
+  }
+
+  &__column-language select {
+    background-color: inherit;
+    color: #fff;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #808080;
+
+    &--payments {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__phone,
+  &__email,
+  &__address {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    margin: 15px 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 17px;
+    color: #fff;
+  }
+
+  &__phone:before,
+  &__email:before,
+  &__address:before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+  }
+
+  .social {
+    &-title {
+      margin-bottom: 10px;
+    }
+  }
+
+}
+
+.main-footer {
+
+}
+
+.main-footer__list {
+
+}
+
+.main-footer__column-language select {
+
+}
+
+.main-footer__title {
+
+}
+
+.main-footer__title--payments {
+
+}
+
+.main-footer__phone,
+.main-footer__email,
+.main-footer__address {
+
+}
+
+.main-footer__phone:before,
+.main-footer__email:before,
+.main-footer__address:before {
+
+}
+
+.social-title {
+
+}
+
+.main-footer__phone:before {
+  background: url(icon-phone-border.svg) center/contain no-repeat;
+}
+
+.main-footer__email:before {
+  background: url(icon-mail.svg) center/contain no-repeat;
+}
+
+.main-footer__address:before {
+  top: 3px;
+  background: url(icon-geo.svg) center/contain no-repeat;
+}
+
+.main-footer__item a, .main-footer__text a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-footer__payments {
+  display: flex;
+  padding-bottom: 25px;
+}
+
+.main-footer__payments img {
+  margin-right: 10px;
+}
+
+.main-footer__post {
+  display: flex;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.main-footer__post-title {
+  font-size: 18px;
+}
+
+.main-footer__post-content {
+  margin-left: 10px;
+}
+
+.main-footer__map {
+  margin-bottom: 40px;
+}
+
+.main-footer__post-date {
+  font-size: 15px;
+  color: #b9b6b6;
+}
+
+.main-footer__top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 30px;
+}
+
+.main-header__logo-img {
+  height: auto;
+}
+
+.main-footer__map {
+  width: 100%;
+  height: auto;
+}
+
+.main-footer__bottom {
+  display: flex;
+  margin-top: 40px;
+}
+
+.main-footer__text {
+  margin-left: 20px;
+}
+
+.social__list {
+  display: flex;
+}
+
+.social__item {
+  margin-right: 15px;
+}
