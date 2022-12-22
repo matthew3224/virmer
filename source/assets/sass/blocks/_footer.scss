@@ -23,6 +23,18 @@
     }
   }
 
+  &__phone {
+
+  }
+
+  &__email {
+
+  }
+
+  &__address {
+
+  }
+
   &__phone,
   &__email,
   &__address {
@@ -34,6 +46,10 @@
     font-size: 18px;
     line-height: 17px;
     color: #fff;
+
+    &:before {
+
+    }
   }
 
   &__phone:before,
