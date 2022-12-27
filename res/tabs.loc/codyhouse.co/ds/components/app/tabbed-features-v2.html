@@ -1,0 +1,872 @@
+<!--[if IE 6]>
+
+HI THERE! 👋
+
+This page is for demo purposes only. We have minified HTML, CSS and JavaScript and shortened class names. Make sure to access the component code using the "View code" button.
+
+Any doubts, get in touch at help@codyhouse.co
+
+<![endif]-->
+<!doctype html>
+<html lang="en">
+<head>
+    <base href="https://codyhouse.co/">
+    <title>Demo: Tabbed Features v2 in HTML, CSS, and JavaScript | CodyHouse</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
+
+    <script src="assets/js/color-theme.js?v=1"></script>
+
+
+    <link rel="stylesheet" href="assets/css/style.min.css?v=203">
+
+</head>
+<body class="user-not-logged-in app">
+
+<div id="adv-search-modal" class="adv-search modal bg pointer-events-none js-modal"
+     data-modal-first-focus="#search-input" data-modal-prevent-scroll="body">
+    <div class="modal__content bg-dark width-100% height-100% pointer-events-auto overflow-auto" role="alertdialog">
+        <header class="bg-dark bg-opacity-90% backdrop-blur-10 position-sticky top-0 z-index-header padding-y-2xs margin-bottom-md margin-top-lg">
+            <div class="container max-width-lg flex justify-between items-center">
+                <h1 class="text-md font-primary">Search</h1>
+                <button class="adv-search__close-btn js-modal__close">
+                    <svg class="icon" viewBox="0 0 20 20">
+                        <title>Close modal</title>
+                        <g fill="currentColor">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                  stroke-width="2" d="M17 17L3 3"></path>
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                  stroke-width="2" d="M17 3L3 17"></path>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </header>
+        <div class="autocomplete container max-width-lg js-adv-search js-autocomplete"
+             data-autocomplete-dropdown-visible-class="autocomplete--results-visible">
+
+            <div class="margin-bottom-xs">
+                <ul class="flex flex-wrap gap-xs js-adv-search__filters">
+                    <li>
+                        <input class="radio radio--bg" type="radio" name="adv-search-cat-select" id="adv-select-cat-all"
+                               checked value="all">
+                        <label class="text-sm" for="adv-select-cat-all">All</label>
+                    </li>
+                    <li>
+                        <input class="radio radio--bg" type="radio" name="adv-search-cat-select"
+                               id="adv-select-cat-blog" value="components">
+                        <label class="text-sm" for="adv-select-cat-blog">Components</label>
+                    </li>
+                    <li>
+                        <input class="radio radio--bg" type="radio" name="adv-search-cat-select"
+                               id="adv-select-cat-docs" value="docs">
+                        <label class="text-sm" for="adv-select-cat-docs">Docs</label>
+                    </li>
+                    <li>
+                        <input class="radio radio--bg" type="radio" name="adv-search-cat-select"
+                               id="adv-select-cat-globals" value="globals">
+                        <label class="text-sm" for="adv-select-cat-globals">Globals</label>
+                    </li>
+                    <li>
+                        <input class="radio radio--bg" type="radio" name="adv-search-cat-select"
+                               id="adv-select-cat-projects" value="projects">
+                        <label class="text-sm" for="adv-select-cat-projects">Projects</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="margin-bottom-lg">
+                <div class="search-input search-input--icon-left position-relative">
+                    <input class="search-input__input form-control js-autocomplete__input" type="search"
+                           name="search-input" id="search-input" aria-label="Search" autocomplete="off">
+                    <div class="search-input__btn">
+                        <svg class="icon" viewBox="0 0 20 20">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                               stroke-width="2">
+                                <circle cx="8" cy="8" r="6"/>
+                                <line x1="12.242" y1="12.242" x2="18" y2="18"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="autocomplete__loader position-absolute top-0 right-0 padding-right-sm height-100% flex items-center"
+                         aria-hidden="true">
+                        <div class="circle-loader circle-loader--v1">
+                            <div class="circle-loader__circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="padding-bottom-lg js-autocomplete__results">
+                <ul class="grid gap-y-md js-autocomplete__list">
+                    <li class="col-12 hide js-adv-search__category">
+                        <div class="margin-bottom-sm">
+                            <h2 class="text-base font-primary">Quick Links</h2>
+                        </div>
+                        <ul class="grid gap-y-3xs js-adv-search__category-results">
+                            <li class="col-12 is-hidden js-autocomplete__item" data-autocomplete-template="quick-link">
+                                <a data-autocomplete-url href="#0" class="adv-search__result-v1">
+<span class="flex items-center">
+<svg class="icon size-lg color-warning-dark margin-right-xs" viewBox="0 0 40 40" aria-hidden="true">
+<title>quick-link</title>
+<g fill="currentColor">
+<circle cx="20" cy="20" r="20" fill-opacity=".2"></circle>
+<path d="M27.914 18.593A1 1 0 0 0 27 18h-5.719l1.689-6.757a1 1 0 0 0-1.713-.912l-9 10A1 1 0 0 0 13 22h5.719l-1.689 6.757a1 1 0 0 0 1.713.912l9-10a1 1 0 0 0 .171-1.076z"></path>
+</g>
+</svg>
+<span data-autocomplete-label></span>
+</span>
+                                    <svg class="icon size-3xs margin-right-3xs" viewBox="0 0 16 16" aria-hidden="true">
+                                        <g fill="currentColor">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                  stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"
+                                                  d="M6 2l6 6-6 6"></path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="col-12">
+                                <a href="ds/components" class="adv-search__result-v1">
+<span class="flex items-center">
+<svg class="icon size-lg color-warning-dark margin-right-xs" viewBox="0 0 40 40" aria-hidden="true">
+<title>quick-link</title>
+<g fill="currentColor">
+<circle cx="20" cy="20" r="20" fill-opacity=".2"></circle>
+<path d="M27.914 18.593A1 1 0 0 0 27 18h-5.719l1.689-6.757a1 1 0 0 0-1.713-.912l-9 10A1 1 0 0 0 13 22h5.719l-1.689 6.757a1 1 0 0 0 1.713.912l9-10a1 1 0 0 0 .171-1.076z"></path>
+</g>
+</svg>
+<span>Components</span>
+</span>
+                                    <svg class="icon size-xs margin-right-3xs" viewBox="0 0 16 16" aria-hidden="true">
+                                        <g fill="currentColor">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                  stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"
+                                                  d="M6 2l6 6-6 6"></path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="col-12">
+                                <a href="ds/get-started" class="adv-search__result-v1">
+<span class="flex items-center">
+<svg class="icon size-lg color-warning-dark margin-right-xs" viewBox="0 0 40 40" aria-hidden="true">
+<title>quick-link</title>
+<g fill="currentColor">
+<circle cx="20" cy="20" r="20" fill-opacity=".2"></circle>
+<path d="M27.914 18.593A1 1 0 0 0 27 18h-5.719l1.689-6.757a1 1 0 0 0-1.713-.912l-9 10A1 1 0 0 0 13 22h5.719l-1.689 6.757a1 1 0 0 0 1.713.912l9-10a1 1 0 0 0 .171-1.076z"></path>
+</g>
+</svg>
+<span>Documentation</span>
+</span>
+                                    <svg class="icon size-xs margin-right-3xs" viewBox="0 0 16 16" aria-hidden="true">
+                                        <g fill="currentColor">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                  stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"
+                                                  d="M6 2l6 6-6 6"></path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="col-12">
+                                <a href="ds/export" class="adv-search__result-v1">
+<span class="flex items-center">
+<svg class="icon size-lg color-warning-dark margin-right-xs" viewBox="0 0 40 40" aria-hidden="true">
+<title>quick-link</title>
+<g fill="currentColor">
+<circle cx="20" cy="20" r="20" fill-opacity=".2"></circle>
+<path d="M27.914 18.593A1 1 0 0 0 27 18h-5.719l1.689-6.757a1 1 0 0 0-1.713-.912l-9 10A1 1 0 0 0 13 22h5.719l-1.689 6.757a1 1 0 0 0 1.713.912l9-10a1 1 0 0 0 .171-1.076z"></path>
+</g>
+</svg>
+<span>Export</span>
+</span>
+                                    <svg class="icon size-xs margin-right-3xs" viewBox="0 0 16 16" aria-hidden="true">
+                                        <g fill="currentColor">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                  stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"
+                                                  d="M6 2l6 6-6 6"></path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="col-12">
+                                <a href="ds/globals" class="adv-search__result-v1">
+<span class="flex items-center">
+<svg class="icon size-lg color-warning-dark margin-right-xs" viewBox="0 0 40 40" aria-hidden="true">
+<title>quick-link</title>
+<g fill="currentColor">
+<circle cx="20" cy="20" r="20" fill-opacity=".2"></circle>
+<path d="M27.914 18.593A1 1 0 0 0 27 18h-5.719l1.689-6.757a1 1 0 0 0-1.713-.912l-9 10A1 1 0 0 0 13 22h5.719l-1.689 6.757a1 1 0 0 0 1.713.912l9-10a1 1 0 0 0 .171-1.076z"></path>
+</g>
+</svg>
+<span>Globals</span>
+</span>
+                                    <svg class="icon size-xs margin-right-3xs" viewBox="0 0 16 16" aria-hidden="true">
+                                        <g fill="currentColor">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                  stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"
+                                                  d="M6 2l6 6-6 6"></path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="col-12">
+                                <a href="ds/all-projects" class="adv-search__result-v1">
+<span class="flex items-center">
+<svg class="icon size-lg color-warning-dark margin-right-xs" viewBox="0 0 40 40" aria-hidden="true">
+<title>quick-link</title>
+<g fill="currentColor">
+<circle cx="20" cy="20" r="20" fill-opacity=".2"></circle>
+<path d="M27.914 18.593A1 1 0 0 0 27 18h-5.719l1.689-6.757a1 1 0 0 0-1.713-.912l-9 10A1 1 0 0 0 13 22h5.719l-1.689 6.757a1 1 0 0 0 1.713.912l9-10a1 1 0 0 0 .171-1.076z"></path>
+</g>
+</svg>
+<span>Projects</span>
+</span>
+                                    <svg class="icon size-xs margin-right-3xs" viewBox="0 0 16 16" aria-hidden="true">
+                                        <g fill="currentColor">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                  stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"
+                                                  d="M6 2l6 6-6 6"></path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="col-12 hide js-adv-search__category">
+                        <div class="margin-bottom-sm">
+                            <h2 class="text-base font-primary">Components</h2>
+                        </div>
+                        <ul class="grid gap-sm js-adv-search__category-results">
+                            <li class="col-12 col-6@sm col-4@lg js-ds-comp-preview js-autocomplete__item is-hidden"
+                                data-autocomplete-template="component">
+                                <div class="card card--component js-ds-comp-preview__card">
+                                    <a data-autocomplete-url href="" class="card__link js-preview-image">
+                                        <img class="block width-100% light:display js-preview-light"
+                                             style="aspect-ratio: 35 / 22;" src="" loading="lazy"
+                                             data-autocomplete-src1>
+                                        <img class="block width-100% dark:display js-preview-light"
+                                             style="aspect-ratio: 35 / 22;" src="" loading="lazy"
+                                             data-autocomplete-src2>
+                                        <div data-autocomplete-label
+                                             class="padding-y-xs padding-x-sm text-sm border-top border-alpha text-truncate js-preview-title"></div>
+                                        <div class="card__badge-group flex gap-4xs">
+                                            <div class="card__pro-badge pro:hide">
+                                                <svg class="icon size-4xs" viewBox="0 0 12 12">
+                                                    <title>Pro component</title>
+                                                    <g fill="currentColor">
+                                                        <path d="M5 5V3a1 1 0 0 1 2 0v2h2V3a3 3 0 0 0-6 0v2z"></path>
+                                                        <rect x="1" y="6" width="10" height="6" rx="1"></rect>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="col-12 hide js-adv-search__category">
+                        <div class="margin-bottom-sm">
+                            <h2 class="text-base font-primary">Docs</h2>
+                        </div>
+                        <ul class="grid gap-y-3xs js-adv-search__category-results">
+                            <li class="col-12 is-hidden js-autocomplete__item" data-autocomplete-template="docs">
+                                <a data-autocomplete-url href="#0" class="adv-search__result-v1">
+<span class="flex items-center">
+<svg class="icon size-lg color-primary margin-right-xs" viewBox="0 0 40 40" aria-hidden="true">
+<title>docs</title>
+<g fill="currentColor">
+<circle cx="20" cy="20" r="20" fill-opacity=".2"></circle>
+<path d="M29.545 11.161a1 1 0 0 0-.951-.075L21 14.461V28.65l8.406-3.736A1 1 0 0 0 30 24V12a1 1 0 0 0-.455-.839z"></path>
+<path d="M19 14.461l-7.594-3.375A1 1 0 0 0 10 12v12a1 1 0 0 0 .594.914L19 28.65z"></path>
+</g>
+</svg>
+<span data-autocomplete-label></span>
+</span>
+                                    <svg class="icon size-3xs margin-right-3xs" viewBox="0 0 16 16" aria-hidden="true">
+                                        <g fill="currentColor">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                  stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"
+                                                  d="M6 2l6 6-6 6"></path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="col-12 hide js-adv-search__category">
+                        <div class="margin-bottom-sm">
+                            <h2 class="text-base font-primary">Globals</h2>
+                        </div>
+                        <ul class="grid gap-y-3xs js-adv-search__category-results">
+                            <li class="col-12 is-hidden js-autocomplete__item" data-autocomplete-template="globals">
+                                <a data-autocomplete-url href="#0" class="adv-search__result-v1">
+<span class="flex items-center">
+<svg class="icon size-lg color-accent margin-right-xs" viewBox="0 0 40 40" aria-hidden="true">
+<title>global</title>
+<g fill="currentColor">
+<circle cx="20" cy="20" r="20" fill-opacity=".2"></circle>
+<path d="M21.121 18.879a3 3 0 0 0-4.242 0c-.892.892-1.6 3.726-1.856 4.9A1 1 0 0 0 16 25a1.05 1.05 0 0 0 .216-.023c1.179-.261 4.013-.964 4.9-1.856a3 3 0 0 0 .005-4.242z"></path>
+<path d="M27 18.656V26a1 1 0 0 1-1 1H14a1 1 0 0 1-1-1V14a1 1 0 0 1 1-1h7.344l2-2H14a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-9.344z"></path>
+<path d="M29.414 10.586a2 2 0 0 0-2.828 0l-5.765 5.765a4.93 4.93 0 0 1 2.829 2.828l5.764-5.765a2 2 0 0 0 0-2.828z"></path>
+</g>
+</svg>
+<span data-autocomplete-label></span>
+</span>
+                                    <svg class="icon size-3xs margin-right-3xs" viewBox="0 0 16 16" aria-hidden="true">
+                                        <g fill="currentColor">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                  stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"
+                                                  d="M6 2l6 6-6 6"></path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="col-12 hide js-adv-search__category">
+                        <div class="margin-bottom-sm">
+                            <h2 class="text-base font-primary">Projects</h2>
+                        </div>
+                        <ul class="grid gap-y-3xs js-adv-search__category-results">
+                            <li class="col-12 is-hidden js-autocomplete__item" data-autocomplete-template="project">
+                                <a data-autocomplete-url href="#0" class="adv-search__result-v1 js-adv-search__project">
+<span class="flex items-center">
+<svg class="icon size-lg color-contrast-high margin-right-xs" viewBox="0 0 40 40" aria-hidden="true">
+<title>project</title>
+<g fill="currentColor">
+<circle cx="20" cy="20" r="20" fill-opacity=".2"></circle>
+<path d="M29 14H18.535l-1.7-2.555A1 1 0 0 0 16 11h-5a1 1 0 0 0-1 1v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V15a1 1 0 0 0-1-1zm-1 12a1 1 0 0 1-1 1H13a1 1 0 0 1-1-1V16h16z"></path>
+</g>
+</svg>
+<span data-autocomplete-label></span>
+</span>
+                                    <svg class="icon size-3xs margin-right-3xs" viewBox="0 0 16 16" aria-hidden="true">
+                                        <g fill="currentColor">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                  stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"
+                                                  d="M6 2l6 6-6 6"></path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="col-12 hide js-adv-search__category">
+                        <div class="js-adv-search__category-results">
+                            <div class="js-autocomplete__item is-hidden" data-autocomplete-template="no-results">
+                                <div class="text-component space-3xs">
+                                    <h2 class="text-base font-primary" data-autocomplete-label></h2>
+                                    <p class="text-sm color-contrast-medium">Feeling lost? Feel free to <a
+                                            href="contact">get in touch</a>!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<main class="app">
+    <div class="app-header  js-app-header">
+        <div class="flex items-center">
+            <div>
+                <button class="app-header__menu-btn btn btn--subtle-2 size-md radius-50% js-tab-focus"
+                        aria-controls="app-header-menu">
+                    <svg class="icon size-3xs" viewBox="0 0 16 16">
+                        <title>Open menu</title>
+                        <g fill="currentColor">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                  stroke-width="2" d="M2 8h12"></path>
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                  stroke-width="2" d="M2 3h12"></path>
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                  stroke-width="2" d="M2 13h12"></path>
+                        </g>
+                    </svg>
+                    <svg class="icon size-3xs" viewBox="0 0 16 16">
+                        <title>Close menu</title>
+                        <g fill="currentColor">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                  stroke-width="2" d="M3 3l10 10"></path>
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                  stroke-width="2" d="M13 3L3 13"></path>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <div>
+                <button class="btn btn--subtle-2 size-md radius-50% js-tab-focus js-tooltip-trigger"
+                        aria-controls="adv-search-modal" data-tooltip-delay="0" data-tooltip-gap="2"
+                        data-tooltip-class="tooltip--sm" title="Ctrl E">
+                    <svg class="icon size-3xs" viewBox="0 0 16 16">
+                        <title>Search</title>
+                        <g fill="currentColor">
+                            <circle cx="6.5" cy="6.5" r="4.5" fill="none" stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"></circle>
+                            <path d="M14 14L9.682 9.682" fill="none" stroke="currentColor" stroke-linecap="round"
+                                  stroke-linejoin="round" stroke-width="2"></path>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+            <div class="margin-left-2xs">
+                <nav>
+                    <ol class="flex items-center">
+                        <li class="display@md">
+                            <a href="ds/components" class="color-contrast-high">Components</a>
+                            <span class="color-contrast-lower margin-x-3xs" aria-hidden="true">/</span>
+                        </li>
+                        <li class="flex items-center display@xs">
+                            <span class="text-truncate inline-block" style="max-width: 130px;"
+                                  title="Tabbed Features v2">Tabbed Features v2</span>
+                        </li>
+                        <li class="display@xs pro:hide">
+                            <a href="sign-up" class="inline-flex margin-left-2xs color-contrast-high">
+                                <svg class="icon size-4xs" viewBox="0 0 12 12">
+                                    <title>Premium content</title>
+                                    <g fill="currentColor">
+                                        <path d="M5 5V3a1 1 0 0 1 2 0v2h2V3a3 3 0 0 0-6 0v2z"></path>
+                                        <rect x="1" y="6" width="10" height="6" rx="1"></rect>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="inline-flex items-center margin-left-2xs display@xs js-bookmark">
+                            <button data-comp="400" class="bookmark-btn js-bookmark__btn ">
+                                <svg class="icon size-4xs" viewBox="0 0 12 12">
+                                    <title>Save component</title>
+                                    <g fill="currentColor">
+                                        <path d="M9 0H3a2 2 0 0 0-2 2v9.5a.5.5 0 0 0 .832.374L6 8.169l4.168 3.705A.5.5 0 0 0 10.5 12a.507.507 0 0 0 .205-.044A.5.5 0 0 0 11 11.5V2a2 2 0 0 0-2-2z"></path>
+                                    </g>
+                                </svg>
+                            </button>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="display@sm margin-left-sm">
+                <label class="color-contrast-low margin-right-3xs display@lg" for="select-theme">Theme:</label>
+                <div class="select select--sm select--label-max-width-100 inline-block js-select"
+                     data-trigger-class="btn btn--subtle btn--sm">
+                    <select name="select-theme" class="hide js-color-theme-select" id="select-theme">
+                        <option value="0" selected>default</option>
+                        <option value="1">dark</option>
+                    </select>
+                    <svg class="hide icon size-6xs margin-left-2xs" aria-hidden="true" viewBox="0 0 8 8">
+                        <g fill="currentColor">
+                            <path d="M1 2.5l3 3 3-3" fill="none" stroke="currentColor" stroke-linecap="round"
+                                  stroke-linejoin="round" stroke-width="2"></path>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-sm js-code-action-wrapper" data-html=" " data-js=" " data-scss=" "
+             data-css=" " data-js=" " data-t-html=" " data-t-css=" " data-t-js=" " data-f-html=" " data-f-css=" "
+             data-f-js=" " data-demo="tabbed-features-v2" data-type="" data-variation="">
+            <div>
+                <a href="ds/components/info/tabbed-features-v2" class="color-contrast-high">Info page</a>
+            </div>
+            <div class="display@lg">
+                <label class="color-contrast-low margin-right-3xs display@xl" for="select-framework">Framework:</label>
+                <div class="select select--sm inline-block js-select" data-trigger-class="btn btn--subtle btn--sm">
+                    <select name="select-framework" id="select-framework">
+                        <option value="codyframe" selected>CodyFrame</option>
+                        <option value="tailwind">Tailwind</option>
+                        <option value="no-framework">No framework</option>
+                    </select>
+                    <svg class="icon size-6xs margin-left-2xs" aria-hidden="true" viewBox="0 0 8 8">
+                        <g fill="currentColor">
+                            <path d="M1 2.5l3 3 3-3" fill="none" stroke="currentColor" stroke-linecap="round"
+                                  stroke-linejoin="round" stroke-width="2"></path>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="display@sm">
+                <div class="flex items-center">
+                    <span class="color-contrast-low margin-right-2xs display@lg">Copy:</span>
+                    <div class="flex items-center gap-2xs js-actions__codyframe ">
+                        <button class="btn btn-states btn--subtle btn--sm btn--cf " data-type="html"
+                                aria-controls="modal-pro-required">
+                            <span class="btn-states__content-a">HTML</span>
+                            <span class="btn-states__content-b">Copied!</span>
+                        </button>
+                        <div class="split-btn inline-flex btn--cf">
+                            <button class="btn btn-states btn--subtle btn--sm  js-copy-code--dependencies"
+                                    data-type="scss" aria-controls="modal-pro-required">
+                                <span class="btn-states__content-a js-btn-split__label">SCSS</span>
+                                <span class="btn-states__content-b">Copied!</span>
+                            </button>
+                            <span class="split-btn__separator" aria-hidden="true"></span>
+                            <button class="btn btn--subtle btn--sm padding-x-2xs" aria-controls="scss-css-popover">
+                                <svg class="icon size-6xs" viewBox="0 0 8 8">
+                                    <title>Toggle other options</title>
+                                    <g fill="currentColor">
+                                        <path d="M1 2.5l3 3 3-3" fill="none" stroke="currentColor"
+                                              stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="scss-css-popover"
+                             class="popover popover--sm bg-light padding-y-3xs radius-md inner-glow shadow-md text-sm js-popover js-tab-focus"
+                             style="--popover-width: 100px;" role="dialog">
+                            <ul>
+                                <li>
+                                    <button class="popover__menu-link js-copy-code js-copy-code--split  js-copy-code--dependencies"
+                                            data-type="scss" aria-controls="modal-pro-required">SCSS
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="popover__menu-link js-copy-code js-copy-code--split  js-copy-code--dependencies"
+                                            data-type="css" aria-controls="modal-pro-required">CSS
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-states btn--subtle btn--sm btn--cf  js-copy-code--dependencies"
+                                data-type="js" aria-controls="modal-pro-required">
+                            <span class="btn-states__content-a">JS</span>
+                            <span class="btn-states__content-b">Copied!</span>
+                        </button>
+                    </div>
+                    <div class="flex items-center gap-2xs js-actions__tailwind hide">
+                        <button class="btn btn-states btn--subtle btn--sm btn--tw " data-type="t-html"
+                                aria-controls="modal-pro-required">
+                            <span class="btn-states__content-a">HTML</span>
+                            <span class="btn-states__content-b">Copied!</span>
+                        </button>
+                        <button class="btn btn-states btn--subtle btn--sm btn--tw  js-copy-code--dependencies"
+                                data-type="t-css" aria-controls="modal-pro-required">
+                            <span class="btn-states__content-a">CSS</span>
+                            <span class="btn-states__content-b">Copied!</span>
+                        </button>
+                        <button class="btn btn-states btn--subtle btn--sm btn--tw  js-copy-code--dependencies"
+                                data-type="t-js" aria-controls="modal-pro-required">
+                            <span class="btn-states__content-a">JS</span>
+                            <span class="btn-states__content-b">Copied!</span>
+                        </button>
+                    </div>
+                    <div class="flex items-center gap-2xs js-actions__no-framework hide">
+                        <button class="btn btn-states btn--subtle btn--sm btn--ff " data-type="f-html"
+                                aria-controls="modal-pro-required">
+                            <span class="btn-states__content-a">HTML</span>
+                            <span class="btn-states__content-b">Copied!</span>
+                        </button>
+                        <button class="btn btn-states btn--subtle btn--sm btn--ff  js-copy-code--dependencies"
+                                data-type="f-css" aria-controls="modal-pro-required">
+                            <span class="btn-states__content-a">CSS</span>
+                            <span class="btn-states__content-b">Copied!</span>
+                        </button>
+                        <button class="btn btn-states btn--subtle btn--sm btn--ff  js-copy-code--dependencies"
+                                data-type="f-js" aria-controls="modal-pro-required">
+                            <span class="btn-states__content-a">JS</span>
+                            <span class="btn-states__content-b">Copied!</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="flex items-center gap-2xs">
+                    <button class="btn btn--primary-subtle btn--sm   js-view-code--dependencies"
+                            aria-controls="modal-pro-required">View code
+                    </button>
+                    <button class="btn btn-states btn--primary btn--sm btn-states--preserve-width display@md js-export-component"
+                            data-cm-id="400" data-cm-label="tabbed-features-v2" data-cm-variation=""
+                            data-framework="codyframe">
+                        <span class="btn-states__content-a items-center">Download</span>
+                        <span class="btn-states__content-b inline-flex flex-center">
+<svg class="icon icon--is-spinning size-3xs" aria-hidden="true" viewBox="0 0 16 16">
+<g fill="currentColor">
+<circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+        stroke-opacity=".3" stroke-width="2"></circle>
+<path d="M8 1a7 7 0 0 1 7 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+      stroke-width="2"></path>
+</g>
+</svg>
+</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="app-header-menu"
+             class="popover popover--sm bg-light padding-y-3xs radius-md inner-glow shadow-sm js-popover js-tab-focus js-app-header-menu"
+             style="--popover-width: 200px;" role="dialog">
+            <ul>
+                <li>
+                    <button class="popover__menu-link js-app-dark-mode">Toggle Dark Mode</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="app-canvas js-app-canvas js-app-canvas--component ">
+        <iframe src="https://codyhouse.co/app/components/demo/demo-tabbed-features-v2" frameborder="0"
+                class="app-canvas__iframe js-app-iframe"></iframe>
+        <div class="app-canvas__loader js-app-canvas__loader">
+            <svg class="icon size-xl icon--is-spinning color-primary" viewBox="0 0 48 48">
+                <title>content is loading</title>
+                <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none" stroke="currentColor">
+                    <circle cx="24" cy="24" r="22" opacity="0.4"></circle>
+                    <path d="M24,2A22,22,0,0,1,46,24"></path>
+                </g>
+            </svg>
+        </div>
+    </div>
+    <div class="notice bottom-md notice--hide js-app-more-info js-notice" data-info="cd-component-app-info"
+         role="alert">
+        <div class="container">
+            <div class="notice__banner max-width-3xs">
+                <div class="margin-bottom-sm">
+                    <div class="text-component space-3xs">
+                        <h4 class="font-primary">First time here?</h4>
+                        <p class="color-contrast-medium">This component is part of the CodyHouse UI Framework.</p>
+                        <p class="color-contrast-medium">Learn more &rarr; <a href="ds/components">All components</a>
+                            <span class="color-contrast-low">|</span> <a href="ds/get-started">Get started</a></p>
+                    </div>
+                </div>
+                <button class="btn btn--contrast width-100% js-notice__hide-control">OK, Got it!</button>
+            </div>
+        </div>
+    </div>
+    <div class="flash-message hide js-flash-message flash-message--error js-flash-message--project-update" role="status"
+         data-message-trigger="" data-duration="3000">
+        <p class="flex items-center">
+            <svg class="icon margin-right-2xs" viewBox="0 0 16 16" aria-hidden="true">
+                <g>
+                    <path d="M15.8,12.526,9.483.88A1.668,1.668,0,0,0,8.8.2,1.693,1.693,0,0,0,6.516.88L.2,12.526A1.678,1.678,0,0,0,1.686,15H14.314a1.7,1.7,0,0,0,.8-.2,1.673,1.673,0,0,0,.687-2.274ZM8,13a1,1,0,1,1,1-1A1,1,0,0,1,8,13ZM9,9.5a.5.5,0,0,1-.5.5h-1A.5.5,0,0,1,7,9.5v-4A.5.5,0,0,1,7.5,5h1a.5.5,0,0,1,.5.5Z"></path>
+                </g>
+            </svg>
+            <span><strong>Error:</strong> please try again or <a href="contact">contact us</a></span></p>
+    </div>
+</main>
+<div class="modal js-modal js-highlight js-modal-code " id="modal-code" data-framework="codyframe">
+    <div class="modal__content width-100% height-100% bg" role="alertdialog">
+        <header class="height-xl padding-x-xs flex items-center justify-between">
+            <ul class="btns btns--radio text-sm inline-flex gap-2xs js-actions__codyframe "
+                style="--btns-button-padding-x: var(--space-xs); --btns-button-padding-y: var(--space-3xs);">
+                <li>
+                    <input type="radio" name="radio-code" id="radio-html" data-type="html" checked>
+                    <label class="btns__btn" for="radio-html">HTML</label>
+                </li>
+                <li>
+                    <input type="radio" name="radio-code" id="radio-scss" data-type="scss">
+                    <label class="btns__btn" for="radio-scss">SCSS</label>
+                </li>
+                <li>
+                    <input type="radio" name="radio-code" id="radio-css" data-type="css">
+                    <label class="btns__btn" for="radio-css">CSS</label>
+                </li>
+                <li>
+                    <input type="radio" name="radio-code" id="radio-js" data-type="js">
+                    <label class="btns__btn" for="radio-js">JS</label>
+                </li>
+            </ul>
+            <ul class="btns btns--radio text-sm inline-flex gap-2xs js-actions__tailwind hide"
+                style="--btns-button-padding-x: var(--space-xs); --btns-button-padding-y: var(--space-3xs);">
+                <li>
+                    <input type="radio" name="radio-t-code" id="radio-t-html" data-type="t-html" checked>
+                    <label class="btns__btn" for="radio-t-html">HTML</label>
+                </li>
+                <li>
+                    <input type="radio" name="radio-t-code" id="radio-t-css" data-type="t-css">
+                    <label class="btns__btn" for="radio-t-css">CSS</label>
+                </li>
+                <li>
+                    <input type="radio" name="radio-t-code" id="radio-t-js" data-type="t-js">
+                    <label class="btns__btn" for="radio-t-js">JS</label>
+                </li>
+            </ul>
+            <ul class="btns btns--radio text-sm inline-flex gap-2xs js-actions__no-framework hide"
+                style="--btns-button-padding-x: var(--space-xs); --btns-button-padding-y: var(--space-3xs);">
+                <li>
+                    <input type="radio" name="radio-f-code" id="radio-f-html" data-type="f-html" checked>
+                    <label class="btns__btn" for="radio-f-html">HTML</label>
+                </li>
+                <li>
+                    <input type="radio" name="radio-f-code" id="radio-f-css" data-type="f-css">
+                    <label class="btns__btn" for="radio-f-css">CSS</label>
+                </li>
+                <li>
+                    <input type="radio" name="radio-f-code" id="radio-f-js" data-type="f-js">
+                    <label class="btns__btn" for="radio-f-js">JS</label>
+                </li>
+            </ul>
+            <button class="btn btn--contrast size-md radius-50% js-modal__close js-tab-focus">
+                <svg class="icon size-3xs" viewBox="0 0 16 16">
+                    <title>Close modal window</title>
+                    <g stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                       stroke-miterlimit="10">
+                        <line x1="13.5" y1="2.5" x2="2.5" y2="13.5"></line>
+                        <line x1="2.5" y1="2.5" x2="13.5" y2="13.5"></line>
+                    </g>
+                </svg>
+            </button>
+        </header>
+        <div class="overflow-auto" style="height: calc(100vh - var(--size-xl));">
+
+            <pre style="height:100%;"><code class="html js-modal__code" style="height:100%;"></code></pre>
+        </div>
+        <button class="btn btn-states btn--contrast position-fixed text-sm bottom-md right-md js-modal__copy">
+            <svg class="icon size-3xs margin-right-2xs" viewBox="0 0 16 16" aria-hidden="true">
+                <g fill="currentColor">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                          stroke-width="2" d="M11 15H2V4h9z"></path>
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                          stroke-width="2" d="M14 12V1H5"></path>
+                </g>
+            </svg>
+            <em class="btn-states__content-a">
+                <span class="js-modal__copy-text">Copy HTML</span>
+            </em>
+            <em class="btn-states__content-b">
+                <span>Copied!</span>
+            </em>
+        </button>
+    </div>
+</div>
+<div id="modal-pro-required"
+     class="modal flex flex-center bg-dark bg-opacity-90% backdrop-blur-10 padding-md  js-modal">
+    <div class="modal__content width-100% max-width-xs max-width-sm@sm max-width-md@md max-height-100% overflow-auto bg-light radius-md inner-glow shadow-sm"
+         role="alertdialog">
+        <div class="flex">
+            <figure class="display@sm width-40% width-100%@md" style="max-width: 380px;">
+                <img class="width-100% height-100% object-cover radius-md light:display"
+                     src="assets/img/pro-modal-bg.jpg" alt="Preview of the components">
+                <img class="width-100% height-100% object-cover radius-md dark:display"
+                     src="assets/img/pro-modal-bg-dark.jpg" alt="Preview of the components">
+            </figure>
+            <div class="flex-grow flex flex-column">
+                <header class="padding-y-sm padding-x-md flex items-center justify-between border-bottom border-alpha">
+                    <h1 class="text-truncate text-md">Unlock all the <span class="color-accent">Pro</span> features</h1>
+                    <button class="btn size-md radius-50% js-modal__close js-tab-focus">
+                        <svg class="icon size-3xs" viewBox="0 0 16 16">
+                            <title>Close modal window</title>
+                            <g stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                               stroke-linejoin="round" stroke-miterlimit="10">
+                                <line x1="13.5" y1="2.5" x2="2.5" y2="13.5"></line>
+                                <line x1="2.5" y1="2.5" x2="13.5" y2="13.5"></line>
+                            </g>
+                        </svg>
+                    </button>
+                </header>
+                <div class="padding-md text-sm@md flex-grow flex items-center">
+                    <div>
+                        <ul class="grid gap-y-xs">
+                            <li class="col-12 flex items-center">
+                                <svg class="icon size-xs margin-right-3xs color-success" viewBox="0 0 24 24"
+                                     aria-hidden="true">
+                                    <title>check</title>
+                                    <g fill="currentColor">
+                                        <circle cx="12" cy="12" r="12" opacity=".2" style="isolation:isolate"></circle>
+                                        <path d="M9.5 17a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414L9.5 14.586l7.293-7.293a1 1 0 1 1 1.439 1.389l-.025.025-8 8A1 1 0 0 1 9.5 17z"></path>
+                                    </g>
+                                </svg>
+                                <span>399 components</span>
+                            </li>
+                            <li class="col-12 flex items-center">
+                                <svg class="icon size-xs margin-right-3xs color-success" viewBox="0 0 24 24"
+                                     aria-hidden="true">
+                                    <title>check</title>
+                                    <g fill="currentColor">
+                                        <circle cx="12" cy="12" r="12" opacity=".2" style="isolation:isolate"></circle>
+                                        <path d="M9.5 17a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414L9.5 14.586l7.293-7.293a1 1 0 1 1 1.439 1.389l-.025.025-8 8A1 1 0 0 1 9.5 17z"></path>
+                                    </g>
+                                </svg>
+                                <span>10 premium templates</span>
+                            </li>
+                            <li class="col-12 flex items-center">
+                                <svg class="icon size-xs margin-right-3xs color-success" viewBox="0 0 24 24"
+                                     aria-hidden="true">
+                                    <title>check</title>
+                                    <g fill="currentColor">
+                                        <circle cx="12" cy="12" r="12" opacity=".2" style="isolation:isolate"></circle>
+                                        <path d="M9.5 17a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414L9.5 14.586l7.293-7.293a1 1 0 1 1 1.439 1.389l-.025.025-8 8A1 1 0 0 1 9.5 17z"></path>
+                                    </g>
+                                </svg>
+                                <span>Future updates</span>
+                            </li>
+                            <li class="col-12 flex items-center">
+                                <svg class="icon size-xs margin-right-3xs color-success" viewBox="0 0 24 24"
+                                     aria-hidden="true">
+                                    <title>check</title>
+                                    <g fill="currentColor">
+                                        <circle cx="12" cy="12" r="12" opacity=".2" style="isolation:isolate"></circle>
+                                        <path d="M9.5 17a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414L9.5 14.586l7.293-7.293a1 1 0 1 1 1.439 1.389l-.025.025-8 8A1 1 0 0 1 9.5 17z"></path>
+                                    </g>
+                                </svg>
+                                <span>Unlimited projects</span>
+                            </li>
+                            <li class="col-12 flex items-center">
+                                <svg class="icon size-xs margin-right-3xs color-success" viewBox="0 0 24 24"
+                                     aria-hidden="true">
+                                    <title>check</title>
+                                    <g fill="currentColor">
+                                        <circle cx="12" cy="12" r="12" opacity=".2" style="isolation:isolate"></circle>
+                                        <path d="M9.5 17a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414L9.5 14.586l7.293-7.293a1 1 0 1 1 1.439 1.389l-.025.025-8 8A1 1 0 0 1 9.5 17z"></path>
+                                    </g>
+                                </svg>
+                                <span>One-click project export</span>
+                            </li>
+                            <li class="col-12 flex items-center">
+                                <svg class="icon size-xs margin-right-3xs color-success" viewBox="0 0 24 24"
+                                     aria-hidden="true">
+                                    <title>check</title>
+                                    <g fill="currentColor">
+                                        <circle cx="12" cy="12" r="12" opacity=".2" style="isolation:isolate"></circle>
+                                        <path d="M9.5 17a1 1 0 0 1-.707-.293l-3-3a1 1 0 0 1 1.414-1.414L9.5 14.586l7.293-7.293a1 1 0 1 1 1.439 1.389l-.025.025-8 8A1 1 0 0 1 9.5 17z"></path>
+                                    </g>
+                                </svg>
+                                <span>One-time payment, lifetime access</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <footer class="padding-top-sm padding-x-md padding-bottom-md flex items-center justify-between text-sm@md">
+                    <a href="log-in" class="link color-contrast-higher">Login</a>
+                    <a href="sign-up" class="btn btn--primary">Pricing →</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var ROUTE = 'ds_components_app_tabbed-features-v2';
+    var AJAX_URL = 'post/';
+    const IS_LOGGED = '0';
+    const IS_FREE = '1';
+    var PROJECT = false;
+    if (IS_LOGGED == 0) {
+        // user is not logged in so they may have saved globals in the local storage
+        var freeUserColors = false, freeUserTypo = false, freeUserSpace = false, freeUserButtons = false,
+            freeUserForms = false, freeUserShared = false;
+        if (localStorage.getItem('cdprjcolors')) freeUserColors = localStorage.getItem('cdprjcolors');
+        if (localStorage.getItem('cdprjtypography')) freeUserTypo = localStorage.getItem('cdprjtypography');
+        if (localStorage.getItem('cdprjspacing')) freeUserSpace = localStorage.getItem('cdprjspacing');
+        if (localStorage.getItem('cdprjbuttons')) freeUserButtons = localStorage.getItem('cdprjbuttons');
+        if (localStorage.getItem('cdprjform')) freeUserForms = localStorage.getItem('cdprjform');
+        if (localStorage.getItem('cdprjsharedstyles')) freeUserShared = localStorage.getItem('cdprjsharedstyles');
+
+        if (freeUserColors || freeUserTypo || freeUserSpace || freeUserButtons || freeUserForms || freeUserShared) {
+            PROJECT = {};
+            if (freeUserColors) PROJECT.colors = freeUserColors;
+            if (freeUserTypo) PROJECT.typography = freeUserTypo;
+            if (freeUserSpace) PROJECT.spacing = freeUserSpace;
+            if (freeUserButtons) PROJECT.buttons = freeUserButtons;
+            if (freeUserForms) PROJECT.form = freeUserForms;
+            if (freeUserShared) PROJECT.shared_styles = freeUserShared;
+        }
+    }
+    var COMPNUM = '399';
+    var DOCTIME = '1663149234';
+</script>
+<script src="assets/js/min/main.min.js?v=211"></script>
+<script src="assets/js/min/app-main.min.js?v=211"></script>
+</body>
+</html>
